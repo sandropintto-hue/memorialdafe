@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Quando a Dor Virou Canção — Quanto Custou Chegar Até Você o Seu Hino Mais Precioso?</title>
+<style>
+    @page {
+        size: A4;
+        margin: 2cm 2cm 2cm 2cm;
+    }
+    body {
+        font-family: 'Georgia', 'Times New Roman', serif;
+        color: #2c3e50;
+        line-height: 1.68;
+        font-size: 11.5pt;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .cover-page {
+        text-align: center;
+        page-break-after: always;
+        padding-top: 25px;
+    }
+    .cover-tag {
+        color: #c5a059;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 11pt;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    .cover-title {
+        font-size: 27pt;
+        color: #1b365d;
+        font-weight: bold;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 1.2;
+    }
+    .cover-subtitle {
+        font-size: 14.5pt;
+        color: #c5a059;
+        font-style: italic;
+        margin-bottom: 25px;
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cover-img {
+        max-width: 390px;
+        max-height: 460px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.28);
+        margin-bottom: 25px;
+        object-fit: cover;
+    }
+    .cover-brand {
+        font-size: 11pt;
+        color: #7f8c8d;
+        margin-top: 15px;
+    }
+    .toc-page {
+        page-break-after: always;
+        padding-top: 15px;
+    }
+    .toc-list {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+    }
+    .toc-list li {
+        padding: 10px 14px;
+        margin-bottom: 8px;
+        background: #f8f9fa;
+        border-left: 4px solid #c5a059;
+        border-radius: 0 6px 6px 0;
+        font-size: 11pt;
+    }
+    .toc-list li strong {
+        color: #1b365d;
+        display: block;
+        font-size: 11.5pt;
+    }
+    .toc-list li span {
+        color: #64748b;
+        font-style: italic;
+        font-size: 10pt;
+    }
+    .chapter-page {
+        page-break-after: always;
+        padding-top: 10px;
+    }
+    .last-page {
+        padding-top: 10px;
+    }
+    h2 {
+        color: #1b365d;
+        font-size: 16.5pt;
+        border-bottom: 2px solid #c5a059;
+        padding-bottom: 6px;
+        margin-top: 0;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    h3.hymn-title {
+        color: #b0893e;
+        font-size: 13.5pt;
+        font-weight: bold;
+        font-style: italic;
+        margin-top: 0;
+        margin-bottom: 14px;
+    }
+    h4 {
+        color: #1b365d;
+        font-size: 12.5pt;
+        margin-top: 16px;
+        margin-bottom: 6px;
+        border-left: 3px solid #c5a059;
+        padding-left: 8px;
+    }
+    .meta-box {
+        background: #f8f9fa;
+        border: 1px solid #e2e8f0;
+        border-left: 4px solid #c5a059;
+        border-radius: 6px;
+        padding: 12px 18px;
+        margin: 12px 0 18px 0;
+    }
+    .meta-box h3 {
+        margin: 0 0 8px 0;
+        font-size: 10.5pt;
+        color: #b0893e;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+    }
+    .meta-box ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .meta-box li {
+        font-size: 10pt;
+        margin-bottom: 4px;
+        color: #334155;
+    }
+    p {
+        margin-bottom: 12px;
+        text-align: justify;
+    }
+    blockquote {
+        border-left: 3px solid #c5a059;
+        background: #fdfaf2;
+        margin: 14px 0 18px 0;
+        padding: 12px 18px;
+        font-style: italic;
+        color: #1b365d;
+        font-size: 11pt;
+        line-height: 1.55;
+        border-radius: 0 6px 6px 0;
+    }
+    .prayer-box {
+        background: #f4f7fb;
+        border-left: 4px solid #1b365d;
+        border-radius: 6px;
+        padding: 12px 18px;
+        margin: 16px 0;
+        font-style: italic;
+        color: #2c3e50;
+    }
+    .prayer-box strong {
+        display: block;
+        font-style: normal;
+        color: #1b365d;
+        text-transform: uppercase;
+        font-size: 10.5pt;
+        margin-bottom: 4px;
+    }
+    .yt-btn {
+        display: inline-block;
+        background-color: #dc2626;
+        color: #ffffff !important;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 10.5pt;
+        padding: 9px 18px;
+        border-radius: 6px;
+        margin-top: 8px;
+    }
+    .pix-box {
+        background: #f8fafc;
+        border: 1px dashed #94a3b8;
+        border-radius: 8px;
+        padding: 14px 18px;
+        margin-top: 18px;
+        font-size: 10pt;
+    }
+    .footer-text {
+        text-align: center;
+        font-size: 9.5pt;
+        color: #64748b;
+        margin-top: 22px;
+        border-top: 1px solid #e2e8f0;
+        padding-top: 12px;
+    }
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<div class="cover-page">
+    <div class="cover-tag">MEMORIAL DA FÉ EDITORA • COLEÇÃO RELÍQUIAS SAGRADAS (VOL. 1)</div>
+    <div class="cover-title">QUANDO A DOR<br>VIROU CANÇÃO</div>
+    <div class="cover-subtitle">Quanto custou chegar até você o seu hino mais precioso?</div>
+    <img src="Capa_3D_Quando_a_Dor_Virou_Cancao_Vol1.png" class="cover-img" alt="Capa Quando a Dor Virou Canção">
+    <p style="max-width: 480px; margin: 0 auto 15px auto; text-align: center; font-size: 10.5pt; color: #475569;">
+        Naufrágios no Atlântico, noivas perdidas às vésperas do altar, furacões em alto-mar e os acordes finais no convés do Titanic: conheça a fé inabalável de quem transformou a tragédia em louvor eterno.
+    </p>
+    <div class="cover-brand">
+        <strong>Edição Oficial • Em parceria com o Canal Ecos da Fé Cristã</strong><br>
+        youtube.com/@ecosdaf • contato@memorialdafe.com.br
+    </div>
+</div>
+
+<!-- SUMÁRIO -->
+<div class="toc-page">
+    <h2>📜 Apresentação: As Lágrimas por Trás da Melodia</h2>
+    <p>Há canções que apenas entretêm os ouvidos por alguns minutos e logo são esquecidas; e há hinos que atravessam séculos inteiros, enxugam lágrimas em leitos de hospital, sustentam famílias enlutadas e parecem carregar um pedaço do próprio Céu em cada palavra.</p>
+    <p>Por que esses hinos antigos têm tanta autoridade espiritual sobre o nosso coração? A resposta é simples e profundamente comovente: <strong>eles custaram caro demais para quem os escreveu.</strong> Não foram compostos por busca de fama ou aplauso, mas arrancados da alma no meio de naufrágios, perseguições, perdas irreparáveis e noites escuras onde a única tábua de salvação era a promessa de Jesus Cristo.</p>
+
+    <h4 style="margin-top: 18px;">📖 Sumário deste Volume</h4>
+    <ul class="toc-list">
+        <li><strong>Capítulo 1: O Naufrágio no Atlântico Norte e as Quatro Filhas</strong><span>Horatio Gates Spafford — "Sou Feliz com Jesus / Tudo Está Bem" (1873)</span></li>
+        <li><strong>Capítulo 2: O Homem que Perdeu Duas Noivas às Vésperas do Altar</strong><span>Joseph Medlicott Scriven — "Em Jesus Amigo Temos" (1855)</span></li>
+        <li><strong>Capítulo 3: O Nascimento de um Bebê num Mundo em Colapso</strong><span>Bill & Gloria Gaither — "Porque Ele Vive" (1970)</span></li>
+        <li><strong>Capítulo 4: O Capitão do Navio Negreiro e o Furacão Mortal</strong><span>John Newton — "Preciosa Graça (Amazing Grace)" (1748)</span></li>
+        <li><strong>Capítulo 5: O Trovão sobre os Fiordes da Suécia</strong><span>Carl Gustav Boberg — "Grandioso És Tu" (1885)</span></li>
+        <li><strong>Capítulo 6: A Febre, o Luto e a Revolta diante do Mar</strong><span>Mary Ann Baker — "Sossegai! Mestre, o Mar se Revolta" (1874)</span></li>
+        <li><strong>Capítulo 7: O Naufrágio do Titanic e o Último Acorde no Convés</strong><span>Sarah Flower Adams & Wallace Hartley — "Mais Perto Quero Estar" (1912)</span></li>
+        <li><strong>Capítulo 8: A Peste Bubônica e a Ameaça da Fogueira</strong><span>Martinho Lutero — "Castelo Forte é Nosso Deus" (1527)</span></li>
+        <li><strong>Capítulo 9: A Zombaria dos Homens e a Visão do Gólgota</strong><span>George Bennard — "A Rude Cruz" (1913)</span></li>
+        <li><strong>Capítulo 10: A Igreja que Não Cantava e o Jovem Ousado</strong><span>Isaac Watts — "Foi na Cruz (Conversão)" (1707)</span></li>
+    </ul>
+</div>
+
+<!-- CAPÍTULO 1 -->
+<div class="chapter-page">
+    <h2>Capítulo 1: O Naufrágio no Atlântico Norte</h2>
+    <h3 class="hymn-title">🎼 "Sou Feliz com Jesus / Tudo Está Bem (It Is Well with My Soul)" — Horatio Spafford</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data do Evento:</strong> 22 de Novembro de 1873 (4h30 da madrugada)</li>
+            <li><strong>📍 Local:</strong> Oceano Atlântico Norte (47°N, 38°W — Alto-Mar)</li>
+            <li><strong>📖 Harpa Cristã:</strong> Hino nº 398 — "Sou Feliz com Jesus" ("Tudo Está Bem")</li>
+            <li><strong>✍️ Autor da Letra:</strong> Horatio Gates Spafford (Advogado e Ancião Presbiteriano)</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Perda do único filho homem por escarlatina, ruína financeira no Grande Incêndio de Chicago (1871) e a morte de suas 4 filhas no naufrágio do navio <em>Ville du Havre</em>.</li>
+        </ul>
+    </div>
+
+    <h4>🌊 A Sucessão de Provas como a de Jó</h4>
+    <p>Em 1870, o respeitado advogado de Chicago <strong>Horatio Spafford</strong> e sua esposa Anna viram seu único filho homem, Horatio Jr., de apenas quatro anos, falecer vitimado pela febre escarlatina. No ano seguinte, em outubro de 1871, o catastrófico Grande Incêndio de Chicago reduziu a cinzas quase todos os imóveis em que Spafford havia investido as economias da família. Buscando trazer descanso à esposa exausta e colaborar com as campanhas evangelísticas do amigo D. L. Moody na Inglaterra, em novembro de 1873 Horatio embarcou Anna e suas quatro filhas — <strong>Annie (11 anos), Maggie (9 anos), Bessie (5 anos) e a pequena Tanetta (2 anos)</strong> — no luxuoso vapor francês <em>Ville du Havre</em>, prometendo juntar-se a elas poucos dias depois.</p>
+
+    <h4>⚡ Doze Minutos nas Águas Geladas</h4>
+    <p>Às duas horas da madrugada de <strong>22 de novembro de 1873</strong>, em pleno Atlântico Norte, o <em>Ville du Havre</em> foi violentamente abalroado pelo veleiro de ferro escocês <em>Loch Earn</em>. O navio partiu-se ao meio e afundou na escuridão glacial em apenas <strong>doze minutos</strong>. No convés inclinado, Anna ajoelhou-se com as quatro filhas nos braços e orou pedindo a Deus que, se fosse a Sua vontade, salvasse as meninas, ou lhes desse graça para morrerem em paz. A força brutal das ondas arrancou até mesmo a bebê de dois anos dos braços da mãe. Duzentas e vinte e seis pessoas pereceram, incluindo as quatro filhas do casal. Anna foi resgatada inconsciente sobre uma prancha de madeira flutuante. Ao desembarcar em Cardiff, no País de Gales, enviou a Chicago o telegrama que entrou para a história: <strong>"Salva sozinha. O que devo fazer?"</strong></p>
+
+    <h4>✍️ O Ponto Exato Onde as Águas Cobriram as Meninas</h4>
+    <p>Horatio tomou imediatamente o primeiro navio rumo à Europa para abraçar a esposa. Na quarta noite de viagem, o capitão chamou Spafford à cabine de comando e disse com voz embargada: <em>"Senhor Spafford, pelos meus cálculos, estamos passando neste exato momento sobre as coordenadas onde o Ville du Havre afundou a três mil metros de profundidade."</em></p>
+    <p>Descendo para seu camarote e olhando pela vigia as ondas negras onde dormiam os corpos de suas quatro filhas, o Espírito Santo envolveu aquele pai em uma paz sobrenatural que excede todo o entendimento humano. Pegando papel e caneta, ele escreveu os versos que já enxugaram milhões de lágrimas:</p>
+    <blockquote>
+        "Quando a paz como um rio seguir o meu rumo, / Quando a dor como as ondas do mar me assolar;<br>
+        Seja o que for, Tu me ensinas a crer: / Que com a minha alma tudo está bem!<br>
+        Tudo está bem, tudo está bem! / Com a minha alma, sim, tudo está bem!"
+    </blockquote>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Ainda que a figueira não floresça, nem haja fruto na vide... todavia eu me alegrarei no Senhor, exultarei no Deus da minha salvação." — <strong>Habacuque 3:17-18</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Senhor Deus, quando as perdas e as águas profundas tentarem sepultar a minha esperança, firma meus olhos na Tua soberania eterna. Dá-me a graça de declarar, acima de qualquer dor terrena: Tudo vai bem com a minha alma. Em nome de Jesus, Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 2 -->
+<div class="chapter-page">
+    <h2>Capítulo 2: O Homem que Perdeu Duas Noivas às Vésperas do Altar</h2>
+    <h3 class="hymn-title">🎼 "Em Jesus Amigo Temos (What a Friend We Have in Jesus)" — Joseph Scriven</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Datas dos Eventos:</strong> 1844 (Irlanda), 1855 (Poema) e 1860 (Canadá)</li>
+            <li><strong>📍 Locais:</strong> Rio Bann (Irlanda) e Port Hope, Ontário (Canadá)</li>
+            <li><strong>📖 Harpa Cristã:</strong> Hino nº 198 — "Jesus, o Bom Amigo"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> A morte trágica de duas noivas antes do casamento: a primeira afogada na véspera das bodas; a segunda vitimada por pneumonia.</li>
+        </ul>
+    </div>
+
+    <h4>💔 Duas Vezes Diante do Luto</h4>
+    <p><strong>Joseph Medlicott Scriven</strong> nasceu em uma família abastada na Irlanda e formou-se pelo prestigiado Trinity College, em Dublin. Em 1844, tudo estava preparado para o seu casamento. Na <strong>véspera da cerimônia</strong>, sua jovem noiva atravessava a ponte sobre o Rio Bann a cavalo para encontrá-lo quando o animal assustou-se e a lançou nas águas turbulentas. Joseph chegou à margem a tempo apenas de ver o corpo sem vida da amada ser retirado da correnteza.</p>
+    <p>Com o coração partido, aos vinte e cinco anos ele abandonou a riqueza da família na Irlanda, mudou-se para o Canadá e fez voto de dedicar a vida a servir aos pobres e às viúvas, serrando lenha gratuitamente nas ruas geladas de Port Hope para quem não podia pagar. Mais de uma década depois, seu coração voltou a sorrir quando conheceu a jovem cristã <strong>Eliza Catherine Roche</strong>. Ficaram noivos, mas após um acidente num lago congelado, Eliza contraiu tuberculose e pneumonia, falecendo em 1860 poucas semanas antes de subirem ao altar.</p>
+
+    <h4>🕊️ "O Senhor e Eu Escrevemos Juntos"</h4>
+    <p>Em 1855, ao receber a notícia de que sua idosa mãe na Irlanda estava gravemente enferma e não tendo dinheiro para comprar uma passagem de navio para visitá-la, Joseph sentou-se à luz de vela e escreveu um poema particular chamado <em>"Orai Sem Cessar"</em> para enviá-lo dentro de uma carta de consolo à mãe. Ele nunca teve a intenção de que o mundo lesse aqueles versos:</p>
+    <blockquote>
+        "Em Jesus amigo temos, mais chegado que um irmão!<br>
+        Ele manda que levemos tudo a Deus em oração!<br>
+        Oh, que paz perdemos sempre, oh, que dor no coração,<br>
+        Só porque nós não levamos tudo a Deus em oração!"
+    </blockquote>
+    <p>Anos mais tarde, quando o próprio Scriven estava doente, um amigo visitou seu quarto humilde, viu uma cópia daqueles versos ao lado da cama e perguntou admirado se ele era o autor. Com humildade profunda, Joseph respondeu: <em>"O Senhor e eu o escrevemos juntos."</em></p>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Não andeis ansiosos de coisa alguma; em tudo, porém, sejam conhecidas, diante de Deus, as vossas petições, pela oração e pela súplica." — <strong>Filipenses 4:6</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Pai Celestial, quando a solidão bater à minha porta e as dores da perda parecerem insuportáveis, ensina-me a não carregar meus fardos sozinho, mas a depositar tudo aos Teus pés em oração. Tu és o meu Amigo fiel em todas as horas. Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 3 -->
+<div class="chapter-page">
+    <h2>Capítulo 3: O Nascimento de um Bebê num Mundo em Colapso</h2>
+    <h3 class="hymn-title">🎼 "Porque Ele Vive (Because He Lives)" — Bill & Gloria Gaither</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data do Evento:</strong> Inverno de 1969 – Primavera de 1970</li>
+            <li><strong>📍 Local:</strong> Alexandria, Indiana (Estados Unidos)</li>
+            <li><strong>📖 Hinários Cristãos:</strong> "Porque Ele Vive (Deus Enviou Seu Filho Amado)"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Crise de enfermidade física, falsas acusações dolorosas e o pavor de dar à luz um filho em meio ao caos da Guerra do Vietnã.</li>
+        </ul>
+    </div>
+
+    <h4>🌑 O Pânico na Sala de Estar</h4>
+    <p>No final de 1969, os Estados Unidos atravessavam um de seus invernos mais sombrios: milhares de jovens voltavam sem vida da Guerra do Vietnã, protestos violentos incendiavam as cidades, as drogas invadiam as escolas e a frase <em>"Deus está morto"</em> estampava as capas das revistas. No meio daquele furacão social, o casal de professores e compositores <strong>Bill e Gloria Gaither</strong> enfrentava uma tempestade particular: Bill sofria de uma exaustiva crise de mononucleose que lhe drenava todas as forças, uma pessoa próxima levantava calúnias injustas contra a família e Gloria descobriu que estava grávida de seu terceiro filho.</p>
+    <p>Na véspera de Ano Novo, sentada sozinha na sala de estar de sua casa em Indiana, Gloria foi tomada por uma onda de angústia e pavor: <em>"Quem em sã consciência traria uma criança indefesa a um mundo tão louco, violento e sem esperança como este?"</em></p>
+
+    <h4>☀️ O Túmulo Vazio e o Bebê nos Braços</h4>
+    <p>Poucos meses depois, nasceu o pequeno Benjamin. Quando Gloria e Bill seguraram aquele recém-nascido nos braços, a presença suave do Espírito Santo entrou no quarto como um raio de sol após a tempestade. Uma verdade eterna brilhou no coração de Gloria: o mundo já havia sido ainda mais escuro sob o domínio de Herodes e de César, mas o Filho de Deus venceu a morte e o túmulo continuava vazio! Portanto, o futuro daquele bebê não estava nas mãos dos governantes terrenos, mas nas mãos furadas pelos cravos do Cristo Vivo:</p>
+    <blockquote>
+        "Quão doce é ter um recém-nascido nos braços, / E sentir o orgulho e a alegria que ele traz;<br>
+        Mas maior ainda é a calma certeza: / Esta criança pode enfrentar dias incertos, porque Ele vive!<br><br>
+        Porque Ele vive, posso crer no amanhã! / Porque Ele vive, temor não há!<br>
+        Mas eu bem sei, eu sei, que a minha vida / Está nas mãos do meu Jesus, que vivo está!"
+    </blockquote>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Eu sou o que vivo; fui morto, mas eis que estou vivo pelos séculos dos séculos!" — <strong>Apocalipse 1:18</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Jesus Ressurreto, dissipa todo o medo do nosso amanhã e do futuro dos nossos filhos e netos. Que as incertezas deste mundo jamais nos paralisem, pois a nossa família está guardada nas mãos Daquele que venceu a própria sepultura. Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 4 -->
+<div class="chapter-page">
+    <h2>Capítulo 4: O Capitão Negreiro e o Furacão no Atlântico</h2>
+    <h3 class="hymn-title">🎼 "Preciosa Graça (Amazing Grace)" — John Newton</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data do Evento:</strong> 10 de Março de 1748 (Conversão) e 1º de Janeiro de 1773 (Hino)</li>
+            <li><strong>📍 Local:</strong> Costa de Donegal (Atlântico Norte) e Olney (Inglaterra)</li>
+            <li><strong>📖 Harpa Cristã / Hinários:</strong> "Preciosa Graça / Maravilhosa Graça"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Uma juventude afundada na blasfêmia, escravizado na África e depois capitão do tráfico negreiro, salvo à beira da morte num naufrágio.</li>
+        </ul>
+    </div>
+
+    <h4>⛓️ O Homem que Até os Marinheiros Temiam</h4>
+    <p><strong>John Newton</strong> perdeu a mãe cristã aos seis anos de idade, mas antes de morrer ela havia plantado versículos bíblicos na memória do menino. Na juventude, porém, ao embarcar nos navios da marinha e da marinha mercante, Newton tornou-se tão rebelde, blasfemo e violento que os próprios capitães diziam que ele inventava novos palavrões nunca antes ouvidos nos portos. Abandonado na costa da Serra Leoa, chegou a viver acorrentado e faminto sob o domínio de um traficante até ser resgatado, passando ele mesmo a trabalhar e comandar navios que transportavam africanos escravizados.</p>
+
+    <h4>🌊 Onze Horas Bombeando Água no Escuro</h4>
+    <p>Na madrugada de <strong>10 de março de 1748</strong>, enquanto retornava para a Inglaterra a bordo do navio <em>Greyhound</em>, um furacão colossal atingiu a embarcação na costa norte da Irlanda. Parte do costado foi arrancada pelas ondas gigantescas, um marinheiro foi varrido ao mar a poucos passos de Newton e os porões encheram-se de água. Após onze horas ininterruptas amarrado às bombas d'água com as mãos em carne viva, sabendo que o navio afundaria a qualquer minuto, aquele ateu zombador deixou escapar do fundo da alma um grito que o próprio coração dele não ouvia desde a infância: <strong>"Senhor, tem misericórdia de nós!"</strong></p>
+    <p>Milagrosamente, a carga de madeira e cera de abelha moveu-se no porão, vedando a fenda no casco, e o vento mudou de direção, levando o navio destroçado até um porto seguro. Newton nunca mais esqueceu o dia 10 de março. Anos depois, abandonou para sempre o comércio negreiro, tornou-se pastor em Olney, foi o mentor espiritual do deputado <strong>William Wilberforce</strong> na luta que aboliu a escravidão em todo o Império Britânico e escreveu sua própria autobiografia cantada:</p>
+    <blockquote>
+        "Preciosa graça de Jesus, / Que a um miserável como eu salvou!<br>
+        Perdido estava, mas Ele me achou; / Era cego, e agora eu vejo!"
+    </blockquote>
+    <p>Aos oitenta e dois anos, quase cego e prestes a partir para a eternidade, Newton resumiu sua vida em uma frase inesquecível: <em>"Minha memória está quase toda apagada, mas de duas coisas eu me lembro perfeitamente bem: que eu sou um grande pecador, e que Cristo é um grande Salvador!"</em></p>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Porque pela graça sois salvos, mediante a fé; e isto não vem de vós; é dom de Deus." — <strong>Efésios 2:8</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Deus de infinita misericórdia, Tua graça alcança o mais profundo abismo e resgata o coração mais distante. Obrigado por não desistires de nós e por transformares o nosso passado sombrio em um testemunho vivo da Tua redenção. Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 5 -->
+<div class="chapter-page">
+    <h2>Capítulo 5: O Trovão sobre os Fiordes da Suécia</h2>
+    <h3 class="hymn-title">🎼 "Grandioso És Tu (O Store Gud / How Great Thou Art)" — Carl Boberg</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data do Evento:</strong> Verão de 1885</li>
+            <li><strong>📍 Local:</strong> Mönsterås, Costa Sudeste da Suécia</li>
+            <li><strong>📖 Harpa Cristã:</strong> Hino nº 526 — "Grandioso És Tu"</li>
+            <li><strong>⚔️ A Jornada do Hino:</strong> Nascido sob os raios de uma tempestade sueca, traduzido na Rússia e descoberto nas florestas da Ucrânia antes de ecoar em todo o mundo.</li>
+        </ul>
+    </div>
+
+    <h4>⚡ A Tempestade em Kronobäck e o Sino ao Longe</h4>
+    <p>Em uma tarde de verão de 1885, o jovem pregador sueco <strong>Carl Gustav Boberg</strong>, então com vinte e cinco anos, caminhava pela bela região costeira de Mönsterås após participar de uma reunião cristã. De repente, nuvens negras fecharam o horizonte sobre o Mar Báltico e uma tempestade elétrica violenta desabou sobre a floresta. Relâmpagos rasgavam o céu e trovões faziam tremer o chão sob os pés do jovem pastor.</p>
+    <p>Tão repentinamente quanto viera, a tormenta cessou. Uma calmaria cristalina cobriu a baía de Kronobäck, um arco-íris brilhou sobre as águas, as aves voltaram a cantar nos galhos molhados e, ao longe, o sino de uma igreja tocou anunciando o cair da tarde. Cheio de temor reverente diante da grandeza do Criador, Boberg chegou em casa, abriu a janela e escreveu as nove estrofes de <em>"O Store Gud"</em>:</p>
+    <blockquote>
+        "Senhor meu Deus, quando eu, maravilhado,<br>
+        Fico a pensar nas obras de Tuas mãos,<br>
+        No céu azul de estrelas pontilhado,<br>
+        O Teu poder mostrando a criação...<br>
+        Então a minh'alma canta a Ti, Senhor:<br>
+        Grandioso és Tu! Grandioso és Tu!"
+    </blockquote>
+    <p>Décadas depois, o missionário inglês <strong>Stuart K. Hine</strong> ouviu camponeses convertidos cantarem esse hino em russo nas montanhas dos Cárpatos, na Ucrânia, pouco antes da Segunda Guerra Mundial. Profundamente emocionado com a devoção daqueles irmãos perseguidos, Hine traduziu o cântico e acrescentou a estrofe final sobre a volta gloriosa de Cristo (<em>"Quando afinal, em resplendor e glória, Jesus abrir as portas da mansão..."</em>), tornando-o um dos dois hinos mais amados de toda a história cristã.</p>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Os céus proclamam a glória de Deus, e o firmamento anuncia as obras das suas mãos." — <strong>Salmos 19:1</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Criador Soberano do céu e da terra, quando as tempestades da vida rugirem ao nosso redor, que consigamos enxergar a Tua majestade e o Teu domínio por trás de cada nuvem. Tu és maior que qualquer problema. Grandioso és Tu! Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 6 -->
+<div class="chapter-page">
+    <h2>Capítulo 6: A Febre, o Luto e a Revolta diante do Mar</h2>
+    <h3 class="hymn-title">🎼 "Sossegai! Mestre, o Mar se Revolta (Peace, Be Still)" — Mary Ann Baker</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data do Evento:</strong> 1874</li>
+            <li><strong>📍 Local:</strong> Chicago, Illinois (Estados Unidos)</li>
+            <li><strong>📖 Harpa Cristã:</strong> Hino nº 578 — "Sossegai!"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Orfandade e a morte do único irmão amado longe de casa por tuberculose, mergulhando a autora em profunda revolta espiritual até ouvir a voz de Cristo.</li>
+        </ul>
+    </div>
+
+    <h4>🥀 O Irmão que Partiu Sozinho na Flórida</h4>
+    <p><strong>Mary Ann Baker</strong> e sua irmã já haviam perdido o pai e a mãe vítimas da implacável tuberculose ("peste branca" do século dezenove). Restava-lhes apenas o jovem irmão mais novo, que era o arrimo, a alegria e o protetor da casa em Chicago. Porém, no início da década de 1870, o rapaz começou a tossir sangue: a mesma doença fatal havia atingido seus pulmões.</p>
+    <p>Desesperadas para salvar a vida do irmão, as duas jovens juntaram cada moeda que possuíam para enviá-lo ao clima quente da Flórida, conforme recomendação médica, enquanto elas ficaram trabalhando em Chicago sem dinheiro sequer para acompanhá-lo na viagem. Durante semanas, oraram dia e noite pedindo a cura do rapaz. Mas a resposta que chegou pelo correio foi um telegrama gelado comunicando que o irmão havia morrido na Flórida e já fora enterrado longe delas.</p>
+
+    <h4>🌊 Quando o Próprio Coração Era o Mar em Fúria</h4>
+    <p>O choque foi devastador. Mary Ann confessou mais tarde que, naqueles dias, seu coração se encheu de amargura e revolta contra Deus: <em>"Eu sempre criei que Deus se importava comigo, mas por que Ele fechou os ouvidos às nossas orações e deixou meu irmão morrer sozinho?"</em></p>
+    <p>Naquele mesmo período, o maestro H. R. Palmer pediu que Mary escrevesse alguns hinos sobre as lições bíblicas da Escola Dominical, e o tema da semana era justamente <strong>Cristo acalmando a tempestade no Mar da Galileia (Marcos 4:37-41)</strong>. Ao ler o grito desesperado e injusto dos discípulos contra Jesus — <em>"Mestre, não se Te dá que pereçamos?"</em> —, Mary viu o espelho exato de sua própria alma revoltada! E quando leu a resposta serena do Salvador repreendendo o vento (<em>"Cala-te, enmudece!"</em>), o Espírito Santo quebrou o gelo do seu luto e acalmou o mar de sua dor:</p>
+    <blockquote>
+        "Mestre, o mar se revolta, as ondas nos dão pavor!<br>
+        O céu se reveste de trevas, não temos um Salvador!<br>
+        Não se Te dá que morramos? Podes assim dormir?<br>
+        ...As ondas atendem ao Meu mandar: Sossegai!<br>
+        Seja o encapelado mar, a ira dos homens, o gênio do mal,<br>
+        Tais águas não podem a nau tragar, que leva o Mestre do céu e mar!"
+    </blockquote>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"E Ele, despertando, repreendeu o vento e disse ao mar: Cala-te, emudece! E o vento se aquietou, e houve grande bonança." — <strong>Marcos 4:39</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Mestre do Céu e do Mar, perdoa-nos quando, no desespero da dor, achamos que Tu estás dormindo ou indiferente às nossas lágrimas. Ordena hoje o Teu 'Sossegai!' sobre as tormentas da nossa mente e da nossa família. Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 7 -->
+<div class="chapter-page">
+    <h2>Capítulo 7: O Naufrágio do Titanic e o Último Acorde no Convés</h2>
+    <h3 class="hymn-title">🎼 "Mais Perto Quero Estar (Nearer, My God, to Thee)" — Sarah Adams & Wallace Hartley</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Datas:</strong> 1841 (Composição por Sarah Flower Adams) e 15 de Abril de 1912 (Titanic)</li>
+            <li><strong>📍 Local:</strong> Londres (Inglaterra) e Oceano Atlântico Norte (2h15 da madrugada)</li>
+            <li><strong>📖 Harpa Cristã:</strong> Hino nº 187 — "Mais Perto Quero Estar"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> A autora que faleceu aos 43 anos de tuberculose e os 8 músicos de Wallace Hartley que escolheram morrer tocando no convés para consolar 1.500 almas.</li>
+        </ul>
+    </div>
+
+    <h4>🪨 O Travesseiro de Pedra de Jacó</h4>
+    <p>Em 1841, a jovem poetisa inglesa <strong>Sarah Flower Adams</strong> (que sofria de saúde frágil e faleceria prematuramente aos quarenta e três anos cuidando da irmã tuberculosa) meditava na história de Jacó em <strong>Gênesis 28</strong>. Fugindo sozinho pelo deserto na escuridão da noite, Jacó deitou a cabeça sobre uma pedra fria como travesseiro e, justamente no lugar mais duro e solitário de sua vida, viu em sonho uma escada que tocava o Céu com os anjos de Deus subindo e descendo. Sarah compreendeu que muitas vezes a pedra dura do nosso sofrimento é o próprio degrau pelo qual subimos mais perto de Deus:</p>
+    <blockquote>
+        "Mais perto quero estar, meu Deus, de Ti!<br>
+        Inda que seja a dor que me una a Ti;<br>
+        Mesmo na escuridão, meu travesseiro será uma pedra,<br>
+        E nos meus sonhos estarei mais perto, meu Deus, de Ti!"
+    </blockquote>
+
+    <h4>🎻 O Violino de Wallace Hartley na Madrugada de 15 de Abril de 1912</h4>
+    <p>Setenta e um anos depois, esse poema protagonizou um dos momentos mais sublimes de coragem cristã da história moderna. O jovem violinista metodista inglês <strong>Wallace Henry Hartley</strong> (33 anos) fora convidado para liderar a orquestra de bordo na viagem inaugural do transatlântico <em>RMS Titanic</em>. Meses antes, em uma entrevista ao jornal de sua igreja, perguntaram a Wallace o que ele faria se um dia estivesse em um navio naufragando; ele respondeu sem hesitar: <em>"Eu sei que tocaria o hino 'Mais Perto Quero Estar, Meu Deus, de Ti'."</em></p>
+    <p>Às 23h40 de 14 de abril de 1912, o <em>Titanic</em> colidiu com o iceberg. Sabendo que havia botes para menos da metade das duas mil e duzentas pessoas a bordo e que as águas a dois graus negativos matariam qualquer um em minutos, Wallace Hartley e seus sete companheiros músicos não correram para disputar lugar nos botes. Vestiram seus coletes salva-vidas, posicionaram-se no convés gelado e tocaram ininterruptamente para evitar o pânico e ajudar mulheres e crianças a embarcarem.</p>
+    <p>Às 2h15 da madrugada, quando o último bote se afastou e a proa do navio mergulhou para o abismo, sobreviventes como Vera Dick e Archibald Gracie testemunharam que os oito músicos permaneceram lado a lado no convés inclinado, puxando os arcos de seus violinos nas notas solenes de <strong>"Mais Perto Quero Estar, Meu Deus, de Ti"</strong> até que as ondas os cobrissem. Dez dias depois, quando resgataram o corpo de Wallace Hartley do oceano, encontraram amarrado ao seu peito o estojo de couro com o violino que sua noiva Maria Robinson lhe dera de presente — um testemunho eterno de que nem as águas da morte podem calar um adorador.</p>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Chegai-vos a Deus, e Ele se chegará a vós." — <strong>Tiago 4:8</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Pai Amado, que até mesmo as pedras duras do caminho e as noites mais frias da nossa jornada sirvam como degraus para nos aproximar do Teu coração. Na vida e na eternidade, nosso único desejo é estar mais perto de Ti. Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 8 -->
+<div class="chapter-page">
+    <h2>Capítulo 8: A Peste Bubônica e a Ameaça da Fogueira</h2>
+    <h3 class="hymn-title">🎼 "Castelo Forte é Nosso Deus (Ein feste Burg)" — Martinho Lutero</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data do Evento:</strong> 1527 – 1529</li>
+            <li><strong>📍 Local:</strong> Wittenberg e Castelo de Wartburg (Alemanha)</li>
+            <li><strong>📖 Harpa Cristã:</strong> Hino nº 581 — "Castelo Forte"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Condenação imperial à morte, o martírio na fogueira de seu amigo Leonhard Kaiser e a epidemia de Peste Negra dentro de sua própria casa.</li>
+        </ul>
+    </div>
+
+    <h4>🛡️ O Ano Mais Sombrio da Reforma (1527)</h4>
+    <p>O ano de 1527 foi o período de maior tribulação na vida de <strong>Martinho Lutero</strong>. Condenado como fora da lei pelo Édito de Worms (o que significava que qualquer pessoa podia matá-lo sem responder por crime), ele acabara de receber a notícia devastadora de que seu querido amigo e colaborador, o pastor <strong>Leonhard Kaiser</strong>, fora queimado vivo em uma fogueira na Baviera por pregar o Evangelho. Ao mesmo tempo, Lutero sofria de vertigens severas, problemas cardíacos e crises espirituais profundas.</p>
+    <p>Para agravar o quadro, em agosto de 1527 a temida <strong>Peste Bubônica (Peste Negra)</strong> invadiu a cidade universitária de Wittenberg. O príncipe eleitor ordenou que todos os professores e alunos fugissem imediatamente para Jena. Lutero, porém, cuja esposa Katharina von Bora estava grávida de seu segundo filho, recusou-se a abandonar o rebanho doente e transformou o antigo mosteiro onde morava em um hospital para acolher os empestados que agonizavam sem socorro.</p>
+
+    <h4>🏰 O Salmo 46 Cantado Contra as Trevas</h4>
+    <p>Cercado pelos gemidos dos moribundos dentro da própria casa, vendo seu filhinho Hans adoecer gravemente e sabendo que as forças do Império queriam sua cabeça, onde Lutero buscava coragem? Sempre que as notícias pareciam insuportáveis, ele chamava seu amigo Philipp Melanchthon e dizia: <em>"Venha, Philipp, vamos cantar o Salmo 46!"</em></p>
+    <p>Pegando seu alaúde, Lutero compôs a letra e a melodia marcial que ressoaria pelos séculos como o brado de vitória da Igreja perseguida:</p>
+    <blockquote>
+        "Castelo forte é nosso Deus, espada e bom escudo!<br>
+        Com Seu poder defende os Seus em todo transe agudo!<br>
+        ...A nossa força nada faz; estamos, sim, perdidos;<br>
+        Mas nosso Deus socorro traz e somos protegidos!<br>
+        Defende-nos Jesus, o que venceu na cruz:<br>
+        Senhor dos altos céus! E, sendo o próprio Deus,<br>
+        Triunfa na batalha!<br><br>
+        Se nos quisessem devorar demônios não contados,<br>
+        Não nos podiam assustar, nem somos derrotados!<br>
+        ...Se nos arrebatar os bens, a vida, os filhos, o lar,<br>
+        Tudo isso pode perecer: o Reino de Deus há de permanecer!"
+    </blockquote>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia. Portanto, não temeremos, ainda que a terra se mude!" — <strong>Salmos 46:1-2</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Senhor dos Exércitos, Tu és o nosso Castelo Forte e escudo inabalável. Quando o mal parecer avançar e a nossa força humana falhar, lembra-nos de que Jesus Cristo já triunfou na cruz e que o Teu Reino jamais será abalado. Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 9 -->
+<div class="chapter-page">
+    <h2>Capítulo 9: A Zombaria dos Homens e a Visão do Gólgota</h2>
+    <h3 class="hymn-title">🎼 "A Rude Cruz (The Old Rugged Cross)" — George Bennard</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data da Composição:</strong> Inverno de 1912 – 1913</li>
+            <li><strong>📍 Local:</strong> Albion, Michigan, e Sturgeon Bay, Wisconsin (EUA)</li>
+            <li><strong>📖 Harpa Cristã:</strong> Hino nº 291 — "A Mensagem da Cruz / A Rude Cruz"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Orfandade na adolescência, trabalho pesado nas minas de carvão para sustentar a mãe e quatro irmãs, e o escárnio sofrido durante suas pregações.</li>
+        </ul>
+    </div>
+
+    <h4>⛏️ Do Fundo da Mina de Carvão ao Púlpito</h4>
+    <p><strong>George Bennard</strong> nasceu em Ohio em 1873 e cresceu na dura cidade mineradora de Lucas, em Iowa. Quando tinha apenas dezesseis anos e sonhava em estudar para ser pregador, seu pai faleceu repentinamente. Sem hesitar, o adolescente George desceu às minas escuras de carvão para trabalhar turnos exaustivos a fim de sustentar a mãe viúva e suas quatro irmãs mais novas. Mais tarde, ingressou no Exército da Salvação e tornou-se evangelista itinerante.</p>
+
+    <h4>🪵 O Escárnio que Gerou o Hino mais Amado sobre o Calvário</h4>
+    <p>No final de 1912, enquanto conduzia uma campanha evangelística em Michigan, George Bennard foi alvo de dura zombaria por parte de jovens rebeldes e críticos que debochavam da pregação do sangue de Jesus. Ferido na alma pelo desprezo com que o mundo tratava o sacrifício de Cristo, Bennard passou semanas orando e meditando dia e noite no significado da Cruz. Ele dizia aos amigos: <em>"Eu via o Cristo da cruz não apenas como um símbolo dourado na parede, mas como o centro vivo de toda a redenção."</em></p>
+    <p>Isolado em oração em Albion, Michigan, a melodia e os versos vieram ao seu coração com tal nitidez que ele pegou seu violão e cantou para a esposa pela primeira vez a obra-prima da sua vida:</p>
+    <blockquote>
+        "Num monte distante ergueu-se uma cruz, / Emblema de afronta e de dor;<br>
+        Mas eu amo essa cruz, onde o meu bom Jesus / Deu a vida por mim, pecador!<br><br>
+        Sim, eu amo a mensagem da cruz, / Té morrer eu a vou proclamar;<br>
+        Levarei eu também minha cruz, / Té por uma coroa trocar!"
+    </blockquote>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Mas longe esteja de mim gloriar-me, a não ser na cruz de nosso Senhor Jesus Cristo." — <strong>Gálatas 6:14</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Amado Salvador, nunca permitas que nos envergonhemos da Tua rude cruz diante de um mundo que zomba da fé. Que possamos abraçar a mensagem do Calvário com amor e fidelidade até o dia em que trocaremos a cruz terrena pela coroa da glória. Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 10 -->
+<div class="chapter-page">
+    <h2>Capítulo 10: A Igreja que Não Cantava e o Jovem Ousado</h2>
+    <h3 class="hymn-title">🎼 "Foi na Cruz (Alas! and Did My Saviour Bleed)" — Isaac Watts</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data da Composição:</strong> 1707 (Refrão adicionado por Ralph E. Hudson em 1885)</li>
+            <li><strong>📍 Local:</strong> Southampton (Inglaterra)</li>
+            <li><strong>📖 Harpa Cristã:</strong> Hino nº 15 — "Conversão (Foi na Cruz)"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Seu pai foi preso na cadeia por pregar a fé não-conformista; Isaac teve a saúde arruinada por febres e enfrentou a fúria dos líderes religiosos por criar hinos centrados em Jesus.</li>
+        </ul>
+    </div>
+
+    <h4>🔇 Quando a Mãe Amamentava o Bebê na Porta da Prisão</h4>
+    <p>O nascimento de <strong>Isaac Watts</strong> (1674–1748), considerado o <em>"Pai da Hinologia Cristã"</em>, já começou debaixo de lágrimas: quando ele ainda era um bebê de colo em Southampton, seu pai foi jogado na prisão pelas autoridades inglesas por recusar-se a abandonar sua fé evangélica congregacional. Durante meses, a mãe de Isaac sentava-se sobre uma pedra fria em frente às grades da cadeia para amamentar o pequeno Isaac e mostrar o menino ao pai preso.</p>
+    <p>Naquela época, as igrejas inglesas viviam um congelamento musical: era proibido cantar qualquer hino que falasse diretamente do nome de Jesus ou da experiência da graça; permitia-se apenas recitar salmos métricos arrastados, sem emoção e sem vida. Aos quinze anos de idade, voltando de um culto monótono, o jovem Isaac comentou com tristeza: <em>"Pai, a forma como cantamos na igreja parece que não conhecemos a alegria da salvação de Cristo!"</em>. Seu pai desafiou-o na hora: <em>"Então dê-nos algo melhor para cantar no próximo domingo, meu filho!"</em></p>
+
+    <h4>🩸 O Hino que Abriu os Olhos dos Cegos</h4>
+    <p>Isaac subiu para o seu quarto e, no domingo seguinte, entregou à congregação seu primeiro hino baseado em Apocalipse 5 (<em>"Eis o Cordeiro de Deus no trono!"</em>). A igreja inteira chorou ao cantar! Mesmo sofrendo de uma saúde extremamente debilitada (ele media apenas um metro e meio de altura e passou trinta e seis anos acamado ou recolhido na casa de amigos que o acolheram), Watts escreveu mais de <strong>setecentos e cinquenta hinos</strong> que revolucionaram o culto cristão para sempre.</p>
+    <p>Em 1707, contemplando o sangue derramado no Gólgota, escreveu a joia que na nossa Harpa Cristã se tornaria o amado <strong>Hino nº 15</strong>:</p>
+    <blockquote>
+        "Oh! Quão cego andei e perdido vaguei, / Longe, longe do meu Salvador!<br>
+        Mas do céu Ele desceu, e Seu sangue verteu / Pra salvar um tão pobre pecador!<br><br>
+        Foi na cruz, foi na cruz, onde um dia eu vi<br>
+        Meu pecado castigado em Jesus!<br>
+        Foi ali, pela fé, que os meus olhos abri,<br>
+        E agora me alegro em Sua luz!"
+    </blockquote>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Ele foi ferido pelas nossas transgressões e moído pelas nossas iniquidades; o castigo que nos traz a paz estava sobre Ele, e pelas Suas pisaduras fomos sarados." — <strong>Isaías 53:5</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Senhor Jesus, nunca deixes que o nosso coração se acostume com o milagre do Calvário. Foi na Tua cruz que a nossa cegueira caiu por terra e a nossa dívida foi apagada para sempre. Recebe hoje o nosso mais profundo louvor e gratidão. Amém."
+    </div>
+</div>
+
+<!-- PÁGINA FINAL: CONEXÃO COM O CANAL ECOS DA FÉ & OFERTA VOLUNTÁRIA PIX -->
+<div class="last-page">
+    <h2>🎵 Ouça Estas Relíquias Cantadas no Nosso Canal</h2>
+    <p>A <strong>Memorial da Fé Editora</strong> caminha lado a lado com o canal oficial <strong>Ecos da Fé Cristã</strong> no YouTube, onde <strong>Angel Lee & Candace Betel</strong> dão voz aos hinos mais amados da história cristã para levar paz, consolo e adoração ao seu lar.</p>
+
+    <div class="meta-box" style="text-align: center; padding: 18px;">
+        <h3 style="font-size: 12pt; color: #1b365d; margin-bottom: 6px;">🎧 OUÇA AGORA NO YOUTUBE: ESPECIAL 7 HINOS INESQUECÍVEIS</h3>
+        <p style="text-align: center; font-size: 10.5pt; margin-bottom: 10px;">
+            Ouça gratuitamente nossa coletânea especial com <em>Tudo Está Bem (Sou Feliz com Jesus), Somente o Amor, Santo Santo Santo, Deus Já Te Ouviu, Deus Velará por Ti</em> e outras relíquias:
+        </p>
+        <a href="https://www.youtube.com/@ecosdaf" class="yt-btn" target="_blank">▶️ CLIQUE AQUI PARA OUVIR NO CANAL ECOS DA FÉ CRISTÃ</a>
+    </div>
+
+    <h4>📚 Continue Sua Leitura com as Demais Obras da Nossa Editora:</h4>
+    <ul>
+        <li><strong>Hinos Escritos com Lágrimas (Volume 2):</strong> Nossa Harpa Cristã e o custo de cada relíquia que cantamos! (<em>Fanny Crosby, Graças Dou, Amor que por Amor Desceste, Tu És Fiel Senhor, Noite Feliz, Os Pioneiros da Harpa</em> e mais).</li>
+        <li><strong>Chamas Vivas do Céu:</strong> A História Épica dos Grandes Avivamentos (De Pentecostes e as primeiras três mil almas em Atos dos Apóstolos até os nossos dias).</li>
+        <li><strong>Devocional 7 Dias de Oração & Paz no Lar:</strong> Orações diárias em voz alta com 14 hinos clicáveis (<a href="https://pay.kiwify.com.br/rItelcl" target="_blank" style="color: #1b365d; font-weight: bold;">pay.kiwify.com.br/rItelcl</a>).</li>
+    </ul>
+
+    <div class="pix-box" style="display: flex; align-items: center; justify-content: center; gap: 16px; text-align: left;">
+        <img src="qrcode_pix_memorial_da_fe.png" style="width: 96px; height: 96px; border-radius: 6px; border: 1px solid #cbd5e1; flex-shrink: 0;" alt="QR Code PIX Memorial da Fé">
+        <div>
+            <strong>🤝 Oferta Voluntária de Amor para a Obra:</strong><br>
+            Deseja apoiar voluntariamente a produção de novos louvores semanais e literaturas cristãs do nosso ministério? Aponte a câmera do aplicativo do seu banco para o QR Code ao lado ou utilize nossa chave oficial:<br>
+            <span style="font-size: 10.5pt; color: #1b365d; font-weight: bold;">🔑 Chave PIX (E-mail): contato@memorialdafe.com.br</span>
+            <span style="font-size: 8.5pt; color: #64748b;">(Titular MEI: Sandro da Silva Pinto)</span><br>
+            <em>Que o Senhor multiplique ricamente a sua semente de fé!</em>
+        </div>
+    </div>
+
+    <div class="footer-text">
+        MEMORIAL DA FÉ EDITORA © 2026 — TODOS OS DIREITOS RESERVADOS<br>
+        <a href="https://www.youtube.com/@ecosdaf" target="_blank" style="color: #1b365d; font-weight: bold;">youtube.com/@ecosdaf</a> • contato@memorialdafe.com.br
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Hinos Escritos com Lágrimas — Nossa Harpa Cristã e o Custo de Cada Relíquia que Cantamos</title>
+<style>
+    @page {
+        size: A4;
+        margin: 2cm 2cm 2cm 2cm;
+    }
+    body {
+        font-family: 'Georgia', 'Times New Roman', serif;
+        color: #2c3e50;
+        line-height: 1.68;
+        font-size: 11.5pt;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    .cover-page {
+        text-align: center;
+        page-break-after: always;
+        padding-top: 25px;
+    }
+    .cover-tag {
+        color: #c5a059;
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 11pt;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    .cover-title {
+        font-size: 27pt;
+        color: #1b365d;
+        font-weight: bold;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 1.2;
+    }
+    .cover-subtitle {
+        font-size: 14.5pt;
+        color: #c5a059;
+        font-style: italic;
+        margin-bottom: 25px;
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cover-img {
+        max-width: 390px;
+        max-height: 460px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.28);
+        margin-bottom: 25px;
+        object-fit: cover;
+    }
+    .cover-brand {
+        font-size: 11pt;
+        color: #7f8c8d;
+        margin-top: 15px;
+    }
+    .toc-page {
+        page-break-after: always;
+        padding-top: 15px;
+    }
+    .toc-list {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+    }
+    .toc-list li {
+        padding: 10px 14px;
+        margin-bottom: 8px;
+        background: #f8f9fa;
+        border-left: 4px solid #c5a059;
+        border-radius: 0 6px 6px 0;
+        font-size: 11pt;
+    }
+    .toc-list li strong {
+        color: #1b365d;
+        display: block;
+        font-size: 11.5pt;
+    }
+    .toc-list li span {
+        color: #64748b;
+        font-style: italic;
+        font-size: 10pt;
+    }
+    .chapter-page {
+        page-break-after: always;
+        padding-top: 10px;
+    }
+    .last-page {
+        padding-top: 10px;
+    }
+    h2 {
+        color: #1b365d;
+        font-size: 16.5pt;
+        border-bottom: 2px solid #c5a059;
+        padding-bottom: 6px;
+        margin-top: 0;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    h3.hymn-title {
+        color: #b0893e;
+        font-size: 13.5pt;
+        font-weight: bold;
+        font-style: italic;
+        margin-top: 0;
+        margin-bottom: 14px;
+    }
+    h4 {
+        color: #1b365d;
+        font-size: 12.5pt;
+        margin-top: 16px;
+        margin-bottom: 6px;
+        border-left: 3px solid #c5a059;
+        padding-left: 8px;
+    }
+    .meta-box {
+        background: #f8f9fa;
+        border: 1px solid #e2e8f0;
+        border-left: 4px solid #c5a059;
+        border-radius: 6px;
+        padding: 12px 18px;
+        margin: 12px 0 18px 0;
+    }
+    .meta-box h3 {
+        margin: 0 0 8px 0;
+        font-size: 10.5pt;
+        color: #b0893e;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+    }
+    .meta-box ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .meta-box li {
+        font-size: 10pt;
+        margin-bottom: 4px;
+        color: #334155;
+    }
+    p {
+        margin-bottom: 12px;
+        text-align: justify;
+    }
+    blockquote {
+        border-left: 3px solid #c5a059;
+        background: #fdfaf2;
+        margin: 14px 0 18px 0;
+        padding: 12px 18px;
+        font-style: italic;
+        color: #1b365d;
+        font-size: 11pt;
+        line-height: 1.55;
+        border-radius: 0 6px 6px 0;
+    }
+    .prayer-box {
+        background: #f4f7fb;
+        border-left: 4px solid #1b365d;
+        border-radius: 6px;
+        padding: 12px 18px;
+        margin: 16px 0;
+        font-style: italic;
+        color: #2c3e50;
+    }
+    .prayer-box strong {
+        display: block;
+        font-style: normal;
+        color: #1b365d;
+        text-transform: uppercase;
+        font-size: 10.5pt;
+        margin-bottom: 4px;
+    }
+    .yt-btn {
+        display: inline-block;
+        background-color: #dc2626;
+        color: #ffffff !important;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 10.5pt;
+        padding: 9px 18px;
+        border-radius: 6px;
+        margin-top: 8px;
+    }
+    .pix-box {
+        background: #f8fafc;
+        border: 1px dashed #94a3b8;
+        border-radius: 8px;
+        padding: 14px 18px;
+        margin-top: 18px;
+        font-size: 10pt;
+    }
+    .footer-text {
+        text-align: center;
+        font-size: 9.5pt;
+        color: #64748b;
+        margin-top: 22px;
+        border-top: 1px solid #e2e8f0;
+        padding-top: 12px;
+    }
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<div class="cover-page">
+    <div class="cover-tag">MEMORIAL DA FÉ EDITORA • COLEÇÃO RELÍQUIAS SAGRADAS</div>
+    <div class="cover-title">HINOS ESCRITOS<br>COM LÁGRIMAS</div>
+    <div class="cover-subtitle">Nossa Harpa Cristã e o custo de cada relíquia que cantamos!</div>
+    <img src="Capa_3D_Hinos_Escritos_Com_Lagrimas_Vol2.png" class="cover-img" alt="Capa Hinos Escritos com Lágrimas">
+    <p style="max-width: 480px; margin: 0 auto 15px auto; text-align: center; font-size: 10.5pt; color: #475569;">
+        Uma jornada profunda e comovente pelos quartos escuros, prisões, epidemias, perdas e renúncias de homens e mulheres que transformaram a maior dor de suas vidas nas estrofes imortais que hoje consolam a Igreja de Cristo.
+    </p>
+    <div class="cover-brand">
+        <strong>Edição Oficial • Em parceria com o Canal Ecos da Fé Cristã</strong><br>
+        youtube.com/@ecosdaf • contato@memorialdafe.com.br
+    </div>
+</div>
+
+<!-- PREFÁCIO E SUMÁRIO -->
+<div class="toc-page">
+    <h2>📜 Prefácio: O Preço Oculto em Cada Acorde</h2>
+    <p>Quando abrimos a nossa querida <em>Harpa Cristã</em> ou entoamos um daqueles hinos antigos que nossos pais e avós cantavam de olhos fechados, raramente paramos para fazer uma pergunta silenciosa: <strong>quanto custou para que essa letra chegasse até nós?</strong></p>
+    <p>Diferente de muitas canções superficiais dos tempos modernos, compostas apenas para preencher palcos, as relíquias sagradas da hinologia cristã não foram escritas em escritórios confortáveis. Elas foram forjadas na fornalha. Foram escritas por uma menina que ficou cega com seis semanas de vida; por um pastor que enterrou quatro mil ovelhas e a própria esposa durante a peste; por um jovem teólogo abandonado pela noiva ao perder a visão; por uma família que preferiu enfrentar as flechas do martírio a negar o nome de Jesus.</p>
+    <p>Cada estrofe que você lerá neste livro carregou o peso de uma cruz real antes de se tornar um bálsamo para a sua alma. Que a leitura destas dez histórias verídicas transforme para sempre a maneira como você canta ao Senhor.</p>
+
+    <h4 style="margin-top: 20px;">📖 Sumário das Relíquias</h4>
+    <ul class="toc-list">
+        <li><strong>Capítulo 1: A Menina Cega que Viu o Trono de Deus</strong><span>Fanny Crosby — "A Deus Seja a Glória", "Perto da Cruz" e 8.000 Hinos</span></li>
+        <li><strong>Capítulo 2: O Pastor Sitiado que Fazia Cinquenta Funerais por Dia</strong><span>Martin Rinkart — "Graças Dou por Esta Vida" (1636)</span></li>
+        <li><strong>Capítulo 3: O Noivo Cego Abandonado à Véspera do Altar</strong><span>George Matheson — "Amor que por Amor Desceste" (1882)</span></li>
+        <li><strong>Capítulo 4: O Homem Doente que Nunca Viu um Milagre Espetacular</strong><span>Thomas Chisholm — "Tu És Fiel, Senhor (Grande é a Tua Fidelidade)" (1923)</span></li>
+        <li><strong>Capítulo 5: O Órgão Roído pelos Ratos e a Trégua nas Trincheiras</strong><span>Joseph Mohr & Franz Gruber — "Noite Feliz (Silent Night)" (1818)</span></li>
+        <li><strong>Capítulo 6: A Jovem Inválida que Se Sentia Inútil para Deus</strong><span>Charlotte Elliott — "Tal Qual Estou (Just As I Am)" (1835)</span></li>
+        <li><strong>Capítulo 7: O Pregador que Perdeu a Voz e Ganhou uma Harpa</strong><span>William Orcutt Cushing — "Debaixo das Asas de Deus" e "Jóias Preciosas"</span></li>
+        <li><strong>Capítulo 8: O Sangue nas Montanhas de Assam e a Fé Inegociável</strong><span>Nokseng — "Eu Resolvi Seguir a Cristo (Não Volto Atrás)" (Século XIX)</span></li>
+        <li><strong>Capítulo 9: A Tempestade de Neve e o Abrigo na Rocha Fendida</strong><span>Fanny Crosby & William Kirkpatrick — "Esconde-me na Rocha (Oh, Quão Doce!)"</span></li>
+        <li><strong>Capítulo 10: A Epopeia da Nossa Harpa Cristã no Brasil</strong><span>Almeida Sobrinho, Paulo Leivas Macalão e o Preço das Relíquias Brasileiras</span></li>
+    </ul>
+</div>
+
+<!-- CAPÍTULO 1 -->
+<div class="chapter-page">
+    <h2>Capítulo 1: A Menina Cega que Viu o Trono de Deus</h2>
+    <h3 class="hymn-title">🎼 "A Deus Seja a Glória", "Perto da Cruz" e mais de 8.000 Relíquias — Fanny Crosby</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Período de Vida:</strong> 24 de Março de 1820 – 12 de Fevereiro de 1915 (94 anos)</li>
+            <li><strong>📍 Local:</strong> Condado de Putnam e Nova York (Estados Unidos)</li>
+            <li><strong>📖 Harpa Cristã:</strong> Mais de 20 hinos (nº 37, 173, 211, 250, 290, entre outros)</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Cegueira total aos 42 dias de vida por erro médico, orfandade paterna, epidemia mortal de cólera e a perda do único filho ainda no berço.</li>
+        </ul>
+    </div>
+
+    <h4>🌑 Seis Semanas de Luz e Noventa e Quatro Anos de Escuridão</h4>
+    <p>Frances Jane Crosby nasceu em uma humilde cabana no interior do estado de Nova York, em março de 1820. Quando tinha apenas seis semanas de vida, uma leve inflamação atingiu seus olhos. O médico da região estava ausente, e um homem que se dizia doutor recomendou a aplicação de cataplasmas quentes de mostarda diretamente sobre as pálpebras da recém-nascida. O tratamento queimou irreversivelmente suas córneas. Antes de completar dois meses, a pequena Fanny mergulhou na escuridão física absoluta; poucos meses depois, seu pai adoeceu e morreu, deixando a jovem mãe viúva trabalhando como empregada doméstica.</p>
+    <p>Quem olhasse para aquela criança pobre, órfã de pai e cega no século dezenove diria que sua vida estava condenada ao esquecimento. Mas sua avó cristã, Eunice Crosby, tomou a menina no colo e decidiu ser os olhos dela. Durante horas a fio, a avó descrevia o pôr do sol, o formato das nuvens, as cores dos pássaros e, acima de tudo, lia a Bíblia inteira para a neta até que Fanny memorizasse de cor todo o Pentateuco, os quatro Evangelhos, os Salmos e Provérbios inteiros.</p>
+
+    <h4>💔 A Epidemia de Cólera e o Berço Vazio</h4>
+    <p>Aos quinze anos, Fanny ingressou no Instituto para Cegos de Nova York, onde mais tarde se tornou professora. Em 1849, uma devastadora epidemia de cólera varreu a cidade. Recusando-se a fugir, a jovem cega caminhava pelos corredores escuros da enfermaria cuidando dos moribundos, segurando mãos geladas e sussurrando promessas bíblicas no ouvido de dezenas de alunos que partiam para a eternidade. Exausta e traumatizada pela morte ao redor, foi em novembro de 1850 — justamente enquanto a igreja cantava o hino <em>"Foi na Cruz"</em> de Isaac Watts — que Fanny sentiu a luz do Espírito Santo inundar sua alma.</p>
+    <p>Anos depois, já casada com o músico cego Alexander Van Alstyne, Fanny deu à luz uma criança. Mas a alegria durou pouco: o pequeno bebê faleceu subitamente durante o sono. Fanny guardou aquela dor materna no mais íntimo do seu peito, quase nunca mencionando o episódio em público, mas canalizando cada lágrima daquele berço vazio para consolar milhões de mães e corações feridos através da poesia sagrada.</p>
+
+    <h4>✨ Oito Mil Cânticos na Ponta dos Dedos</h4>
+    <p>Fanny Crosby escreveu mais de <strong>oito mil hinos</strong> — um recorde na história da cristandade, tantos que os editores precisavam criar dezenas de pseudônimos para não preencher os hinários apenas com o nome dela. Ela jamais aceitou enriquecer com suas letras: vendia seus poemas por um ou dois dólares cada e vivia em apartamentos modestos perto das favelas de Manhattan e Bridgeport, doando tudo aos pobres nas missões urbanas.</p>
+    <p>Certa vez, um pastor bem-intencionado disse a ela com pena: <em>"Fanny, acho uma lástima que o Senhor, tendo lhe concedido tantos dons, não lhe tenha dado o dom da visão."</em> A resposta dela calou o salão inteiro:</p>
+    <blockquote>
+        "Você sabe que, se no dia do meu nascimento eu pudesse ter feito uma petição a Deus, teria pedido exatamente para nascer cega? Porque, quando eu chegar ao céu, o primeiro rosto que já terá enchido a alegria dos meus olhos por toda a eternidade será o rosto do meu Salvador!"
+    </blockquote>
+    <p>Foi dessa visão interior inabalável que brotaram estrofes que hoje cantamos de joelhos:</p>
+    <blockquote>
+        "Perto da cruz quero estar, / Junto aos pés do meu Senhor; / Pois ali, a transbordar, / Corre a fonte de amor!<br>
+        Na cruz, na cruz, / Seja a minha glória sempre! / Té que a minha alma enfim descanse / Salva além do rio!"
+    </blockquote>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Porque andamos por fé, e não por vista." — <strong>2 Coríntios 5:7</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Senhor meu Deus, perdoa-me pelas vezes em que murmurei diante das limitações da minha jornada. Abre os olhos espirituais do meu coração como fizeste com Tua serva Fanny Crosby, para que mesmo nas noites mais escuras desta terra eu contemple a beleza da Tua cruz e o brilho do Teu trono. Em nome de Jesus, Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 2 -->
+<div class="chapter-page">
+    <h2>Capítulo 2: O Pastor Sitiado que Fazia Cinquenta Funerais por Dia</h2>
+    <h3 class="hymn-title">🎼 "Graças Dou por Esta Vida (Nun danket alle Gott)" — Martin Rinkart</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data do Evento:</strong> 1636 – 1637 (Auge da Guerra dos Trinta Anos)</li>
+            <li><strong>📍 Local:</strong> Cidade murada de Eilenburg, Saxônia (Alemanha)</li>
+            <li><strong>📖 Hinários Cristãos:</strong> "Graças Dou por Esta Vida" / "Agora Graças Dai a Deus"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Cerco militar, fome extrema, peste bubônica e o sepultamento de mais de 4.480 pessoas — incluindo sua própria esposa.</li>
+        </ul>
+    </div>
+
+    <h4>⚔️ A Cidade Cercada pela Fome e pela Morte</h4>
+    <p>Poucos períodos da história europeia foram tão tenebrosos quanto a Guerra dos Trinta Anos (1618–1648). Em 1636, a pequena cidade murada de Eilenburg, na Saxônia, tornou-se o refúgio desesperado de milhares de camponeses e fugitivos que escapavam dos exércitos invasores. A superlotação atrás das muralhas trouxe consigo dois cavaleiros implacáveis: a fome absoluta e a Grande Peste de 1637.</p>
+    <p>Havia quatro pastores na cidade quando a peste começou. Um deles abandonou o rebanho e fugiu para salvar a própria pele; os outros dois contraíram a doença e morreram rapidamente. Restou apenas um homem de pé entre os vivos e os mortos: o pastor luterano <strong>Martin Rinkart</strong>, então com cinquenta anos de idade.</p>
+
+    <h4>⚰️ Quatro Mil e Quatrocentos Sepultamentos</h4>
+    <p>O cenário dentro dos muros de Eilenburg desafia a imaginação moderna. Os registros históricos preservados mostram que, apenas no ano de 1637, Martin Rinkart oficiou pessoalmente o sepultamento de <strong>quatro mil, quatrocentas e oitenta pessoas</strong>. Nos dias mais críticos da epidemia, ele realizava entre quarenta e cinquenta funerais por dia. Quando não havia mais madeira para caixões, famílias inteiras eram depositadas em valas comuns enquanto Rinkart, sob chuva ou sol escaldante, lia a Palavra de Deus e orava sobre a terra aberta.</p>
+    <p>Em maio daquele mesmo ano fatídico, o golpe mais cruel bateu à porta da casa pastoral: a esposa amada de Martin Rinkart adoeceu e faleceu. Com o coração em pedaços, ele mesmo precisou conduzir o funeral da companheira de sua vida e voltar para casa a fim de cuidar dos filhos famintos. A escassez era tamanha que Rinkart empenhou todas as suas futuras rendas para comprar migalhas de pão para os órfãos da cidade; nas ruas, trinta ou quarenta pessoas disputavam o corpo de um corvo morto ou de um gato para não morrerem de inanição.</p>
+
+    <h4>🍞 O Cântico na Mesa Quase Vazia</h4>
+    <p>Como um homem que sepultou a esposa, viu a cidade dizimada e não tinha quase nada para pôr no prato dos filhos reagiu diante de Deus? Sentando-se à mesa com suas crianças diante de uma porção mínima de alimento, Martin Rinkart escreveu uma oração cantada para que seus filhos recitassem todos os dias antes de comer. Naquele vale de sombras, ele não escreveu um poema de amargura, mas o maior hino de ação de graças da história cristã:</p>
+    <blockquote>
+        "Agora graças dai a Deus, com coração, voz e mãos,<br>
+        Que grandes coisas fez em nós e em todos os cristãos;<br>
+        Que desde o berço maternal nos conservou a vida,<br>
+        E até aqui nos concedeu mercê imerecida!<br>
+        O Deus eterno e bom nos dê, enquanto aqui vivermos,<br>
+        Alegre e grato coração, e a paz que d'Ele temos!"
+    </blockquote>
+    <p>Séculos mais tarde, adaptado também em nossas igrejas como <em>"Graças dou por esta vida, pelo bem que revelou; graças dou pelo futuro, e por tudo que passou"</em>, o hino de Rinkart permanece como um monumento eterno à fé que agradece mesmo quando tudo ao redor desaba.</p>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Em tudo dai graças, porque esta é a vontade de Deus em Cristo Jesus para convosco." — <strong>1 Tessalonicenses 5:18</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Pai Santo, cala em meus lábios toda reclamação. Quando olho para a fidelidade de Teu servo Martin Rinkart agradecendo pelo pão escasso em meio à peste e ao luto, meu coração se quebranta. Ensina-me a louvar-Te não apenas nos dias de fartura, mas também no deserto. Em nome de Jesus, Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 3 -->
+<div class="chapter-page">
+    <h2>Capítulo 3: O Noivo Cego Abandonado à Véspera do Altar</h2>
+    <h3 class="hymn-title">🎼 "Amor que por Amor Desceste (O Love That Wilt Not Let Me Go)" — George Matheson</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data do Evento:</strong> Noite de 6 de Junho de 1882</li>
+            <li><strong>📍 Local:</strong> Paróquia de Innellan, Argyll (Costa da Escócia)</li>
+            <li><strong>📖 Hinários Cristãos:</strong> "Amor que por Amor Desceste" / "Ó Amor que Não Me Deixarás"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Perda progressiva da visão na juventude e o rompimento humilhante do noivado pela mulher que amava.</li>
+        </ul>
+    </div>
+
+    <h4>💔 "Não Quero Ser Esposa de um Homem Cego"</h4>
+    <p>George Matheson nasceu em Glasgow, na Escócia, em 1842. Dotado de uma inteligência brilhante, ingressou na Universidade de Glasgow e destacou-se como o primeiro aluno de sua turma em filosofia e teologia. Na juventude, apaixonou-se profundamente por uma jovem colega e os dois ficaram noivos, planejando o casamento e o ministério pastoral juntos.</p>
+    <p>Porém, durante os estudos finais, a visão de George começou a escurecer rapidamente. O diagnóstico médico foi uma sentença sem apelação: atrofia irreversível do nervo óptico. Em poucos meses, ele ficaria completamente cego pelo resto da vida. Com o coração trêmulo, George procurou a noiva para contar a verdade. A reação dela foi uma punhalada que atravessou sua alma: ela devolveu a aliança e declarou friamente que <em>"não poderia atravessar a vida inteira presa a um homem cego"</em>.</p>
+
+    <h4>🌧️ A Noite Solitária do Casamento da Irmã</h4>
+    <p>Após o abandono da noiva, a irmã mais nova de George assumiu o compromisso de cuidar dele. Ela aprendeu grego, latim e hebraico apenas para ler os textos teológicos para o irmão, ajudando-o a se tornar um dos pregadores mais amados de toda a Escócia — a ponto de a própria Rainha Vitória viajar para ouvi-lo pregar.</p>
+    <p>Mas na noite de <strong>6 de junho de 1882</strong>, quando George tinha quarenta anos, essa irmã que cuidava dele casou-se. Toda a família viajou para a festa do casamento. George ficou absolutamente sozinho na casa pastoral de Innellan, ouvindo o vento do mar bater nas janelas na escuridão. O casamento da irmã trouxe de volta, com força avassaladora, a ferida da mulher que o havia rejeitado vinte anos antes por causa de sua cegueira, além da realidade de que agora viveria o resto de seus dias em completa solidão.</p>
+
+    <h4>🔥 Cinco Minutos Sob o Fogo do Céu</h4>
+    <p>Mais tarde, o próprio Matheson descreveu aquela noite: <em>"Algo me aconteceu que só Deus conhece. Eu sofri a mais severa tortura mental de toda a minha vida. Meu hino foi o fruto daquele sofrimento. Foi o trabalho mais rápido que já fiz: levou apenas cinco minutos, como se uma voz interior estivesse ditando cada palavra para mim."</em></p>
+    <p>Enquanto o amor humano o havia descartado por causa de sua fraqueza, George sentiu nos braços de Cristo um Amor eterno que jamais devolve a aliança e jamais abandona os seus feridos:</p>
+    <blockquote>
+        "Ó Amor que não me deixarás, / Descansa a minha alma em Ti;<br>
+        A vida que me deste entrego em Tuas mãos, / Pois no Teu mar profundo ela renascerá!<br>
+        Ó Luz que segues meu andar, / A minha tocha bruxuleante entrego a Ti;<br>
+        Ó Alegria que me buscas através da dor, / Não posso fechar meu coração a Ti:<br>
+        Eu busco o arco-íris através da chuva, / E sei que a promessa não é vã:<br>
+        Que a manhã romperá sem lágrimas!"
+    </blockquote>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Porque estou bem certo de que nem a morte, nem a vida, nem os anjos, nem os principados, nem as coisas do presente, nem do porvir... poderá separar-nos do amor de Deus, que está em Cristo Jesus, nosso Senhor." — <strong>Romanos 8:38-39</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Amado Jesus, quando as portas humanas se fecharem e o abandono ou a rejeição tentarem ferir a minha dignidade, envolve-me no Teu amor incondicional. O mundo ama apenas enquanto há vantagem, mas Tu me amaste na minha fraqueza e compraste a minha alma na cruz. Em Teus braços eu descanso. Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 4 -->
+<div class="chapter-page">
+    <h2>Capítulo 4: O Homem Doente que Nunca Viu um Milagre Espetacular</h2>
+    <h3 class="hymn-title">🎼 "Tu És Fiel, Senhor (Grande é a Tua Fidelidade)" — Thomas Chisholm</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data da Composição:</strong> 1923</li>
+            <li><strong>📍 Local:</strong> Vineland, Nova Jersey (Estados Unidos)</li>
+            <li><strong>📖 Harpa Cristã / Hinários:</strong> "Tu És Fiel, Senhor" (Great Is Thy Faithfulness)</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Saúde extremamente frágil que o obrigou a abandonar o pastorado em menos de um ano, depressão física e uma vida inteira de recursos escassos.</li>
+        </ul>
+    </div>
+
+    <h4>🌾 O Pregador que Precisou Descer do Púlpito</h4>
+    <p>Nem toda história de dor é marcada por um único furacão repentino; algumas são marcadas pela cruz silenciosa e diária de um corpo enfermo. <strong>Thomas Obadiah Chisholm</strong> nasceu em uma cabana de toras de madeira no Kentucky, em 1866. Sem condições financeiras de cursar universidade, estudou sozinho à luz de lamparina e, aos dezesseis anos, já lecionava na mesma escolinha rural onde havia aprendido a ler.</p>
+    <p>Aos vinte e sete anos, entregou a vida a Cristo e sentiu o ardente chamado para o ministério pastoral. Foi ordenado pastor metodista em 1903, com o coração cheio de sonhos para ganhar almas. Contudo, menos de um ano após assumir sua primeira igreja em Scottsville, sua saúde entrou em colapso severo. Crises nervosas, fraqueza crônica e distúrbios digestivos graves impediam que ele ficasse de pé no púlpito. Em lágrimas, sentindo-se um fracassado diante do chamado, Thomas precisou renunciar ao pastorado para sempre.</p>
+
+    <h4>☀️ O Milagre do Pão de Cada Manhã</h4>
+    <p>Para sobreviver e sustentar a família, Chisholm mudou-se para uma pequena fazenda e, mais tarde, tornou-se um modesto corretor de seguros em Nova Jersey, caminhando de porta em porta quando o corpo permitia. Ele nunca recebeu uma cura física instantânea. Nunca pastoreou uma grande catedral. Nunca acumulou riquezas.</p>
+    <p>Mas, em 1923, aos cinquenta e sete anos de idade, olhando pela janela de sua casa simples ao amanhecer e meditando em <strong>Lamentações 3:22-23</strong>, Thomas percebeu algo profundo: ele não precisava de um trovão no céu para provar que Deus era fiel. O fato de ele ainda estar vivo, de o sol nascer todas as manhãs, de a primavera suceder ao inverno e de nunca ter faltado o prato de comida na mesa de sua família já era o maior de todos os milagres! Ele pegou a caneta e escreveu:</p>
+    <blockquote>
+        "Tu és fiel, Senhor, meu Pai Celeste: / Pleno poder aos Teus filhos darás;<br>
+        Nunca mudaste, Tu nunca faltaste: / Tal como eras, Tu sempre serás!<br>
+        Tu és fiel, Senhor! Tu és fiel, Senhor!<br>
+        Dia após dia, com bênçãos sem fim,<br>
+        Tua mercê me sustenta e me guarda;<br>
+        Tu és fiel, Senhor, fiel a mim!"
+    </blockquote>
+    <p>Em 1941, já idoso, Thomas escreveu em uma carta: <em>"Minha renda nunca foi grande em tempo algum devido à saúde ruim que me acompanhou desde a juventude. Apesar disso, devo registrar a fidelidade infalível de um Deus guardador de alianças, que me deu inúmeras mostras de Seu cuidado maravilhoso, pelo qual minha gratidão jamais terá fim."</em></p>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"As misericórdias do Senhor são a causa de não sermos consumidos, porque as suas misericórdias não têm fim; renovam-se cada manhã. Grande é a tua fidelidade!" — <strong>Lamentações 3:22-23</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Pai Fiel, perdoa-me quando espero apenas por grandes espetáculos e esqueço de agradecer pelo milagre silencioso do fôlego em meus pulmões a cada manhã. Obrigado porque, mesmo nos dias cinzentos e nas fraquezas do meu corpo, a Tua mão jamais me desamparou. Tu és fiel a mim! Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 5 -->
+<div class="chapter-page">
+    <h2>Capítulo 5: O Órgão Quebrado e a Trégua nas Trincheiras</h2>
+    <h3 class="hymn-title">🎼 "Noite Feliz (Stille Nacht / Silent Night)" — Joseph Mohr & Franz Gruber</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data do Evento:</strong> 24 de Dezembro de 1818 (e Natal de 1914 nas Trincheiras)</li>
+            <li><strong>📍 Local:</strong> Oberndorf bei Salzburg (Áustria) e Front Ocidental (Bélgica)</li>
+            <li><strong>📖 Harpa Cristã / Hinários:</strong> "Noite de Paz / Noite Feliz"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Devastação pós-Guerras Napoleônicas, miséria extrema dos barqueiros austríacos, um órgão inutilizado na véspera de Natal e o frio mortal da Primeira Guerra Mundial.</li>
+        </ul>
+    </div>
+
+    <h4>❄️ A Aldeia Faminta Após a Guerra</h4>
+    <p>Quando ouvimos os acordes suaves de <em>"Noite Feliz"</em>, imaginamos uma noite tranquila e próspera. A realidade histórica de 1818 era exatamente o oposto. A Europa acabara de sair de vinte anos de derramamento de sangue nas Guerras Napoleônicas. Além disso, a erupção do vulcão Tambora em 1815 havia causado o chamado <em>"Ano Sem Verão"</em> em 1816: as colheitas congelaram na Áustria, a fome assolou as vilas alpinas e o mapa da região de Salzburgo foi redesenhado a ferro e fogo, dividindo famílias inteiras.</p>
+    <p>Foi para a pequena e empobrecida vila de <strong>Oberndorf</strong> — habitada por barqueiros exaustos que transportavam sal pelo rio Salzach — que foi enviado o jovem clérigo <strong>Joseph Mohr</strong>, nascido na pobreza extrema e criado sem pai. Na manhã de 24 de dezembro de 1818, uma notícia desanimadora abalou a pequena Igreja de São Nicolau: o antigo órgão de tubos, corroído pela umidade das enchentes do rio e com o fole danificado por ratos, parou de funcionar. Não haveria música para consolar aquele povo faminto na noite de Natal.</p>
+
+    <h4>🎸 Seis Estrofes e um Violão Emprestado</h4>
+    <p>Em vez de cancelar o cântico da noite, Joseph Mohr lembrou-se de um poema de seis estrofes que havia escrito dois anos antes, meditando sobre como o Rei do Universo não nasceu em um palácio protegido por exércitos, mas na humildade silenciosa de uma estrebaria — tão pobre quanto os moradores daquela aldeia.</p>
+    <p>Mohr caminhou na neve até a vila vizinha de Arnsdorf e bateu à porta do professor primário e organista <strong>Franz Xaver Gruber</strong>. Entregou-lhe o papel e pediu: <em>"Franz, o órgão morreu. Você consegue compor hoje à tarde uma melodia simples a duas vozes para cantarmos acompanhados apenas pelo meu violão?"</em> Em poucas horas, Gruber escreveu a melodia. Naquela noite gelada, diante de barqueiros e viúvas da guerra, o som humilde das cordas de um violão entoou pela primeira vez <em>"Stille Nacht, heilige Nacht"</em>.</p>
+
+    <h4>🕊️ O Milagre nas Trincheiras de 1914</h4>
+    <p>Quase cem anos depois, na noite de <strong>24 de dezembro de 1914</strong>, em pleno horror da Primeira Guerra Mundial em Ypres (Bélgica), soldados alemães, britânicos e franceses estavam enterrados na lama congelada das trincheiras, separados por apenas cinquenta metros de arame farpado e corpos caídos. De repente, no escuro da meia-noite, um soldado alemão começou a cantar: <em>"Stille Nacht, heilige Nacht..."</em>. Do outro lado da terra de ninguém, os soldados britânicos reconheceram a melodia e responderam em inglês: <em>"Silent Night, Holy Night..."</em>. As armas calaram. Soldados saíram das trincheiras desarmados, abraçaram-se chorando no meio do campo de batalha, sepultaram seus mortos juntos e leram o Salmo 23 lado a lado — provando que o hino nascido de um órgão quebrado tinha poder para parar uma guerra.</p>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Glória a Deus nas maiores alturas, e paz na terra entre os homens, a quem Ele quer bem." — <strong>Lucas 2:14</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Príncipe da Paz, quando os instrumentos da nossa segurança quebrarem e o mundo parecer mergulhado em guerra e escassez, lembra-nos de que Tu nasceste na humildade de Belém para habitar em nosso coração. Faze soar a Tua paz dentro do nosso lar hoje. Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 6 -->
+<div class="chapter-page">
+    <h2>Capítulo 6: A Jovem Inválida que Se Sentia Inútil para Deus</h2>
+    <h3 class="hymn-title">🎼 "Tal Qual Estou (Just As I Am)" — Charlotte Elliott</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data do Evento:</strong> 1835</li>
+            <li><strong>📍 Local:</strong> Brighton, Sussex (Inglaterra)</li>
+            <li><strong>📖 Harpa Cristã / Hinários:</strong> Hino nº 272 — "Tal Qual Estou" / "Assim Como Estou"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Enfermidade debilitante aos 30 anos que a deixou inválida pelo resto da vida, acompanhada de crises de depressão e sentimento de inutilidade espiritual.</li>
+        </ul>
+    </div>
+
+    <h4>🛏️ O Quarto Silencioso Enquanto Todos Trabalhavam</h4>
+    <p>Charlotte Elliott nasceu na Inglaterra em 1789. Durante a juventude, era conhecida como uma jovem brilhante, talentosa pintora de retratos e escritora de versos humorísticos nas rodas sociais de Londres. Porém, em 1821, aos trinta e dois anos de idade, uma grave enfermidade acometeu seu corpo, deixando-a permanentemente inválida, presa ao leito ou a uma cadeira de rodas e sujeita a dores constantes pelo resto de seus oitenta e dois anos de vida.</p>
+    <p>A paralisia física trouxe uma tempestade emocional avassaladora. Charlotte sentia-se um peso para a família e indigna diante de Deus. Em 1822, o célebre evangelista suíço <strong>César Malan</strong> visitou a casa da família Elliott em Brighton. Percebendo a angústia nos olhos de Charlotte, perguntou se ela tinha paz com Deus. Ela respondeu com sinceridade: <em>"Não sei como ir a Cristo; sinto que preciso primeiro consertar meu coração, vencer minha amargura e me tornar uma pessoa melhor antes que Ele possa me aceitar."</em> O pastor Malan olhou para ela com ternura e disse sete palavras que mudaram a história da Igreja: <strong>"Charlotte, venha a Ele tal qual você está."</strong></p>
+
+    <h4>😢 A Noite da Feira Beneficente de 1835</h4>
+    <p>Treze anos se passaram. Em 1835, o irmão de Charlotte, o pastor Henry Venn Elliott, organizava um grande bazar beneficente para construir uma escola gratuita para as filhas de pastores pobres em Brighton. Toda a família e os membros da igreja trabalhavam dia e noite nos preparativos: cozinhando, decorando salões, costurando e arrecadando fundos. Todos, menos Charlotte.</p>
+    <p>Na véspera do evento, a casa ficou completamente vazia enquanto todos foram para o salão da escola. Deitada sozinha no sofá de seu quarto, sentindo dores no corpo, o inimigo sussurrou na mente de Charlotte: <em>"Você não serve para nada. Todos estão fazendo a obra de Deus, e você é apenas um fardo inútil neste quarto."</em> As lágrimas começaram a rolar pelo rosto dela.</p>
+
+    <h4>✍️ O Papel que Ganhou Milhões de Almas</h4>
+    <p>Para não sucumbir ao desespero naquela tarde solitária, Charlotte puxou uma folha de papel e decidiu reafirmar para a própria alma a promessa que ouvira treze anos antes: que Deus não exigia sua força física nem obras humanas para amá-la. Ela escreveu:</p>
+    <blockquote>
+        "Tal qual estou, sem esperar / Que possa a vida melhorar,<br>
+        Só no Teu sangue a confiar: / Ó Salvador, me achego a Ti!<br>
+        Tal qual estou, em aflição, / Cercado de perturbação,<br>
+        Com lutas fora e dentro, então: / Ó Salvador, me achego a Ti!<br>
+        Tal qual estou, me aceitarás, / Perdoarás, restaurarás,<br>
+        Pois Tua promessa cumprirás: / Ó Salvador, me achego a Ti!"
+    </blockquote>
+    <p>Após a morte de Charlotte em 1871, encontraram em sua escrivaninha mais de <strong>mil cartas</strong> de pessoas que haviam entregue suas vidas a Jesus através daquele único poema. No século vinte, <em>"Tal Qual Estou"</em> tornou-se o hino oficial de apelo das cruzadas de Billy Graham em todos os continentes. A mulher inválida que chorou achando que não podia fazer nada na obra de Deus levou mais almas aos pés da cruz do que exércitos inteiros de pregadores.</p>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Todo aquele que o Pai me dá virá a mim; e o que vem a mim, de maneira nenhuma o lançarei fora." — <strong>João 6:37</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Senhor Jesus, livra-me da mentira de achar que preciso primeiro ser forte ou perfeito para me aproximar de Ti. Esvazia o meu orgulho e cura o meu complexo de incapacidade. Hoje eu me lanço aos Teus pés exatamente tal qual estou, confiando unicamente no poder do Teu sangue. Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 7 -->
+<div class="chapter-page">
+    <h2>Capítulo 7: O Pregador que Perdeu a Voz e Ganhou uma Harpa</h2>
+    <h3 class="hymn-title">🎼 "Debaixo das Asas de Deus (Under His Wings)" e "Jóias Preciosas" — William Cushing</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data do Evento:</strong> 1870 – 1896</li>
+            <li><strong>📍 Local:</strong> Estado de Nova York (Estados Unidos)</li>
+            <li><strong>📖 Harpa Cristã / Hinários:</strong> "Debaixo das Asas de Deus", "Esconde-me na Rocha" e "Jóias Preciosas"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Morte da esposa após longa enfermidade, seguida de paralisia facial e perda da fala que encerraram sua carreira no púlpito.</li>
+        </ul>
+    </div>
+
+    <h4>🔇 Quando o Púlpito Se Fecha</h4>
+    <p>Para um pregador apaixonado pelo Evangelho, poucas dores podem ser maiores do que perder a própria voz. <strong>William Orcutt Cushing</strong> (1823–1902) serviu durante dezesseis anos como um zeloso pastor no interior de Nova York. Sua pregação era fervorosa e sua vida era inteiramente dedicada às igrejas por onde passava, ao lado de sua esposa Rena.</p>
+    <p>Porém, no final da década de 1860, a saúde de sua esposa deteriorou-se gravemente. William dedicou anos inteiros a cuidar dela dia e noite até que ela faleceu em 1870. O esgotamento físico e o choque profundo do luto desencadearam em William uma paralisia rastejante que atingiu suas cordas vocais e parte de seus movimentos. De repente, o pastor viúvo descobriu que nunca mais conseguiria pregar um sermão sequer. Sua voz não passava de um sussurro rouco e doloroso.</p>
+
+    <h4>🪽 A Oração de quem Não Podia Mais Falar</h4>
+    <p>Aposentado à força, sozinho e com parcos recursos, Cushing sentou-se em seu pequeno quarto e fez uma oração silenciosa que ficou registrada em seus diários: <em>"Senhor, já que tiraste a minha voz para falar do Teu amor nos púlpitos, ainda assim dá-me algo que eu possa fazer pela Tua glória antes de partir."</em></p>
+    <p>Deus respondeu àquela oração de maneira extraordinária. Aquele homem que nunca havia sido poeta famoso começou a ouvir melodias e versos no silêncio de sua enfermidade. Ao longo dos anos seguintes, William Cushing escreveu mais de <strong>trezentos hinos</strong> que foram musicados por gigantes como Ira Sankey e George Root. Quando sentia o peso da solidão e da paralisia, fechava os olhos no Salmo 17:8 e no Salmo 91:4 e escrevia:</p>
+    <blockquote>
+        "Debaixo das asas de Deus estou salvo,<br>
+        Ainda que a noite seja escura e atroz;<br>
+        Confio em Seu braço, não temo o perigo,<br>
+        Pois sou redimido e ouço a Sua voz!<br>
+        Debaixo das asas, oh, que doce abrigo!<br>
+        Ali a minha alma descansa em paz!"
+    </blockquote>
+    <p>Também saiu da pena daquele viúvo sem filhos o célebre hino infantil e congregacional <em>"Jóias Preciosas (Quando Ele vier buscar Suas jóias)"</em>. A voz de William Cushing calou-se em uma pequena paróquia de Nova York para que suas palavras fossem cantadas em dezenas de idiomas ao redor da Terra.</p>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Cobrir-te-á com as suas penas, e debaixo das suas asas estarás seguro; a sua verdade é pavês e escudo." — <strong>Salmos 91:4</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Deus Eterno, quando uma porta de serviço se fechar na minha vida e eu não entender os Teus caminhos, guarda-me debaixo das Tuas asas. Mostra-me que Tu és especialista em transformar o nosso silêncio em um novo cântico que alcança muito mais longe do que jamais sonhamos. Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 8 -->
+<div class="chapter-page">
+    <h2>Capítulo 8: O Sangue nas Montanhas de Assam e a Fé Inegociável</h2>
+    <h3 class="hymn-title">🎼 "Eu Resolvi Seguir a Cristo (I Have Decided to Follow Jesus)" — Nokseng</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data do Evento:</strong> Segunda metade do Século XIX</li>
+            <li><strong>📍 Local:</strong> Colinas de Garo, Região de Assam (Nordeste da Índia)</li>
+            <li><strong>📖 Hinários Cristãos:</strong> "Eu Decidi Seguir a Cristo / Não Volto Atrás"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> O martírio real de uma família inteira — os dois filhos pequenos, a esposa e o próprio pai — diante do chefe tribal por se recusarem a renunciar a Jesus.</li>
+        </ul>
+    </div>
+
+    <h4>🏹 A Aldeia de Caçadores de Cabeças</h4>
+    <p>De todos os hinos entoados nos batismos e cultos de consagração ao redor do mundo, nenhum carrega um preço de sangue tão literal quanto <em>"Eu Resolvi Seguir a Cristo"</em>. No século dezenove, a região montanhosa de Assam, no nordeste da Índia (atual estado de Meghalaya), era habitada pelas tribos Garo, conhecidas por sua ferocidade guerreira e hostilidade absoluta a qualquer influência externa.</p>
+    <p>Missionários batistas galeses arriscaram a própria vida para levar o Evangelho àquelas montanhas. Em uma das aldeias, um homem chamado <strong>Nokseng</strong>, junto com sua esposa e seus dois filhos pequenos, foi profundamente tocado pelo amor de Cristo na cruz. Ele abandonou os ídolos da tribo e confessou publicamente a Jesus como único Senhor e Salvador. Seu testemunho de paz e transformação logo começou a atrair outros moradores da aldeia.</p>
+
+    <h4>🩸 As Três Estrofes Escritas Diante das Flechas</h4>
+    <p>Enfurecido com o avanço da nova fé, o chefe da aldeia convocou toda a tribo para a praça central e mandou prender Nokseng, sua esposa e as duas crianças. Cercados por arqueiros com arcos retesados, o chefe deu o ultimato: <em>"Renuncie imediatamente a esse Cristo estrangeiro em público, ou seus dois filhos morrerão diante dos seus olhos!"</em></p>
+    <p>No silêncio tenso da aldeia, com o coração dilacerado mas os olhos fixos na eternidade, Nokseng respondeu cantando a primeira frase que ecoaria pelos séculos:</p>
+    <blockquote>"Eu resolvi seguir a Cristo! / Eu resolvi seguir a Cristo! / Não volto atrás, não volto atrás!"</blockquote>
+    <p>O chefe deu a ordem e as flechas tiraram a vida dos dois meninos. Em seguida, o líder tribal voltou-se novamente para Nokseng: <em>"Você perdeu seus filhos. Agora renuncie à sua fé, ou sua esposa também morrerá!"</em> Olhando para a companheira que partilhava da mesma esperança da ressurreição, Nokseng entoou a segunda estrofe:</p>
+    <blockquote>"Ainda que ninguém vá comigo, / Ainda que ninguém vá comigo, / Eu seguirei! Não volto atrás!"</blockquote>
+    <p>Sua esposa caiu mártir ao lado dos filhos. Restava apenas Nokseng de pé. O chefe deu-lhe a última chance para salvar a própria pele. Diante de toda a tribo que assistia estarrecida àquela coragem sobrenatural, Nokseng olhou para o céu e cantou a terceira e última estrofe antes de receber as flechas:</p>
+    <blockquote>"O mundo atrás e a cruz na frente! / O mundo atrás e a cruz na frente! / Não volto atrás, não volto atrás!"</blockquote>
+
+    <h4>🌱 A Semente que Converteu o Algoz</h4>
+    <p>Naquela noite, o chefe da aldeia não conseguiu dormir. Uma pergunta queimava em sua consciência: <em>"Que Deus é esse pelo qual um homem e sua família inteira preferem morrer cantando em paz a negar o Seu nome?"</em> Pouco tempo depois, o próprio chefe tribal caiu de joelhos em arrependimento, entregou sua vida a Jesus Cristo, e a aldeia inteira converteu-se ao Evangelho — transformando as últimas palavras de Nokseng no hino de batismo de milhões de cristãos.</p>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Sê fiel até à morte, e dar-te-ei a coroa da vida." — <strong>Apocalipse 2:10</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Senhor Jesus, envergonha a minha covardia e fortalece a minha fé diante do testemunho dos mártires que deram a própria vida por amor ao Teu Nome. Que nenhuma pressão, zombaria ou ameaça deste mundo me faça olhar para trás. O mundo ficou para trás e a Tua cruz está diante de mim! Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 9 -->
+<div class="chapter-page">
+    <h2>Capítulo 9: O Mineiro Aleijado e o Abrigo na Rocha Fendida</h2>
+    <h3 class="hymn-title">🎼 "Esconde-me na Rocha (He Hideth My Soul)" — Fanny Crosby & William Kirkpatrick</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Data da Composição:</strong> 1890</li>
+            <li><strong>📍 Local:</strong> Nova York e Pensilvânia (Estados Unidos)</li>
+            <li><strong>📖 Harpa Cristã / Hinários:</strong> "A Rocha Celeste / Esconde-me na Rocha"</li>
+            <li><strong>⚔️ O Preço Pago:</strong> O testemunho real de um jovem inglês que perdeu as duas pernas num acidente de trabalho e cuja alegria radiante inspirou a canção.</li>
+        </ul>
+    </div>
+
+    <h4>🦽 O Jovem sem Pernas que Brilhava como o Sol</h4>
+    <p>Em 1890, o compositor e maestro metodista <strong>William J. Kirkpatrick</strong> visitou a casa de Fanny Crosby com uma história que não saía de sua mente. Ele havia acabado de conhecer na Inglaterra um jovem cristão chamado <strong>Henry</strong>, que sofrera um terrível acidente industrial em que tivera as duas pernas amputadas. Condenado à imobilidade e à pobreza em uma época sem cadeiras de rodas modernas ou previdência social, qualquer pessoa esperaria encontrar Henry mergulhado em revolta.</p>
+    <p>Para espanto de todos os visitantes, o pequeno quarto de Henry era o lugar mais luminoso da cidade. Seu rosto resplandecia com uma paz tão tangível que pastores e vizinhos iam visitá-lo não para consolá-lo, mas para serem consolados por ele! Quando perguntaram a Henry qual era o segredo de tamanha felicidade sem as duas pernas, ele abriu a Bíblia em <strong>Êxodo 33:22</strong> — a passagem em que Deus coloca Moisés na fenda da penha e o cobre com a Sua própria mão enquanto a Sua glória passa — e respondeu sorrindo: <em>"Quando o acidente aconteceu, o Senhor me colocou na fenda da Rocha e cobriu a minha alma com a palma da Sua mão!"</em></p>
+
+    <h4>🪨 A Palma da Mão que Cobre a Ferida</h4>
+    <p>Ao ouvir Kirkpatrick relatar a frase daquele jovem amputado, o rosto de Fanny Crosby iluminou-se. Ela pediu silêncio na sala, inclinou a cabeça por alguns minutos e as estrofes brotaram inteiras, unindo a dor física daquele jovem inglês à sua própria cegueira sob a sombra protetora do Todo-Poderoso:</p>
+    <blockquote>
+        "Que grande Salvador é Jesus, o Senhor,<br>
+        Que grande Salvador é para mim!<br>
+        Esconde a minh'alma na fenda da rocha,<br>
+        Onde correm rios de prazer sem fim!<br><br>
+        Esconde a minh'alma na fenda da rocha,<br>
+        Que cobre a terra seca e sem vigor;<br>
+        Esconde a minha vida nas profundezas do Seu amor,<br>
+        E cobre-me ali com a Sua mão,<br>
+        E cobre-me ali com a Sua mão!"
+    </blockquote>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"E acontecerá que, passando a minha glória, pôr-te-ei numa fenda da penha, e te cobrirei com a minha mão, até que eu haja passado." — <strong>Êxodo 33:22</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Rocha Eterna da minha salvação, quando o deserto da vida queimar ao meu redor e as perdas tentarem roubar a minha alegria, esconde a minha alma na fenda da Tua graça e cobre a minha casa com a palma da Tua mão poderosa. Em Ti está o meu refúgio seguro. Amém."
+    </div>
+</div>
+
+<!-- CAPÍTULO 10 -->
+<div class="chapter-page">
+    <h2>Capítulo 10: A Epopeia da Nossa Harpa Cristã no Brasil</h2>
+    <h3 class="hymn-title">🎼 "Chuvas de Graça", "Fala, Jesus Querido" e o Preço das Relíquias Brasileiras</h3>
+    <div class="meta-box">
+        <h3>⏱️ Ficha Histórica do Memorial</h3>
+        <ul>
+            <li><strong>📅 Marco Histórico:</strong> 1922 (1ª Edição no Recife) aos Nossos Dias (640 Hinos)</li>
+            <li><strong>📍 Locais:</strong> Belém do Pará, Recife (PE) e Rio de Janeiro (RJ)</li>
+            <li><strong>📖 Pioneiros e Poetas:</strong> Adriano Nobre, Almeida Sobrinho, Frida Vingren, Paulo Leivas Macalão e Samuel Nyström</li>
+            <li><strong>⚔️ O Preço Pago:</strong> Prisões, apedrejamentos em praças públicas, febre amarela, pobreza extrema e perseguição religiosa nos primórdios do movimento no Brasil.</li>
+        </ul>
+    </div>
+
+    <h4>🌧️ Cânticos Entoados Debaixo de Pedradas</h4>
+    <p>Esta obra não estaria completa se não honrássemos o sangue, o suor e as lágrimas dos pioneiros brasileiros e missionários que nos legaram o maior tesouro musical da fé evangélica em língua portuguesa: a nossa amada <strong>Harpa Cristã</strong>. Hoje cantamos seus 640 hinos em templos climatizados e através das telas do celular, mas nos anos de 1911 a 1930, cantar um hino da Harpa em praça pública no Brasil custava a liberdade e, muitas vezes, a própria integridade física.</p>
+    <p>Quando os primeiros crentes reuniam-se debaixo das mangueiras no Norte e no Nordeste do país, com ternos simples de brim branco e Bíblias gastas debaixo do braço, turbas incitadas pela intolerância religiosa da época arremessavam pedras, lama e brasas contra os fiéis. Muitos irmãos iam para o cárcere cantando o <strong>Hino nº 1 (Chuvas de Graça)</strong> e o <strong>Hino nº 15 (Conversão)</strong>, transformando as celas úmidas das delegacias do interior em verdadeiros cenáculos de adoração.</p>
+
+    <h4>🥀 As Lágrimas de Frida Vingren e a Caneta de Paulo Macalão</h4>
+    <p>Poucos sabem que dezenas das letras mais profundas da nossa Harpa Cristã foram escritas por <strong>Frida Vingren</strong> (1891–1940), esposa do missionário pioneiro Gunnar Vingren. Enfermeira e musicista formada na Suécia, Frida deixou todo o conforto europeu para viver no calor tropical do Pará e do Rio de Janeiro. Ela enfrentou a malária, a febre amarela, a incompreensão até mesmo de líderes da época e o esgotamento físico extremo — vindo a falecer prematuramente aos quarenta e nove anos de idade, mas deixando dezenas de hinos imortais que exalam a saudade do Céu e o consolo do Espírito Santo.</p>
+    <p>Ao lado dela e de tradutores como <strong>Almeida Sobrinho</strong> (que organizou a primeira edição com 100 hinos em Recife, em 1922) e <strong>Samuel Nyström</strong>, levantou-se o jovem <strong>Paulo Leivas Macalão</strong> (filho de um general do Exército Brasileiro), que se converteu em 1924 no Rio de Janeiro após ser tocado pelo som de um violino tocando hinos sacros. Com seu inseparável violino em punho, Macalão traduziu e adaptou mais de <strong>duzentos e cinquenta hinos</strong> da Harpa Cristã, preservando a métrica poética, a rima rica e a unção que atravessaram um século inteiro:</p>
+    <blockquote>
+        "Deus prometeu com certeza / Chuvas de graça mandar;<br>
+        Ele nos dá fortaleza, / E ricas bênçãos sem par!<br>
+        Chuvas de graça, / Chuvas pedimos, Senhor;<br>
+        Manda-nos chuvas constantes, / Chuvas do Consolador!"
+    </blockquote>
+
+    <h4>⚓ Versículo Âncora</h4>
+    <blockquote>"Lembrai-vos dos vossos pastores, que vos falaram a palavra de Deus, a fé dos quais imitai, atentando para a sua maneira de viver." — <strong>Hebreus 13:7</strong></blockquote>
+
+    <div class="prayer-box">
+        <strong>🙏 Oração do Memorial</strong>
+        "Senhor dos Exércitos, nós Te louvamos pela nuvem de testemunhas brasileiras e estrangeiras que pagaram o preço das pedradas, da febre e da renúncia para que hoje tivéssemos a Harpa Cristã em nossas mãos. Não deixes que essa chama se apague na nossa geração. Aviva o nosso canto! Em nome de Jesus, Amém."
+    </div>
+</div>
+
+<!-- PÁGINA FINAL: CONEXÃO COM O CANAL ECOS DA FÉ & OFERTA VOLUNTÁRIA PIX -->
+<div class="last-page">
+    <h2>🎵 Continue Ouvindo Estas Relíquias no Seu Lar</h2>
+    <p>Cada página que você acabou de ler ganha vida em forma de música e oração no nosso canal oficial <strong>Ecos da Fé Cristã</strong> no YouTube, na interpretação emocionante de <strong>Angel Lee & Candace Betel</strong>.</p>
+
+    <div class="meta-box" style="text-align: center; padding: 18px;">
+        <h3 style="font-size: 12pt; color: #1b365d; margin-bottom: 6px;">🎧 OUÇA AGORA NO YOUTUBE: ESPECIAL 7 HINOS INESQUECÍVEIS</h3>
+        <p style="text-align: center; font-size: 10.5pt; margin-bottom: 10px;">
+            Mais de 30 minutos de louvores antigos selecionados (<em>Somente o Amor, Santo Santo Santo, Tudo Está Bem, Deus Já Te Ouviu, Deus Velará por Ti</em> e mais) para encher a sua casa da paz do Espírito Santo:
+        </p>
+        <a href="https://www.youtube.com/@ecosdaf" class="yt-btn" target="_blank">▶️ CLIQUE AQUI PARA OUVIR NO CANAL ECOS DA FÉ CRISTÃ</a>
+    </div>
+
+    <h4>📚 Conheça Também as Outras Obras da Coleção Memorial da Fé:</h4>
+    <ul>
+        <li><strong>Quando a Dor Virou Canção (Volume 1):</strong> As histórias comoventes de <em>Sou Feliz com Jesus, Preciosa Graça, Porque Ele Vive, Mais Perto Quero Estar (Titanic), A Rude Cruz, Castelo Forte</em> e mais.</li>
+        <li><strong>Chamas Vivas do Céu:</strong> A História Épica dos Grandes Avivamentos — das primeiras três mil almas em Atos dos Apóstolos até os nossos dias.</li>
+        <li><strong>Devocional 7 Dias de Oração & Paz no Lar:</strong> Orações em voz alta com 14 hinos clicáveis para a família (<a href="https://pay.kiwify.com.br/rItelcl" target="_blank" style="color: #1b365d; font-weight: bold;">pay.kiwify.com.br/rItelcl</a>).</li>
+    </ul>
+
+    <div class="pix-box" style="display: flex; align-items: center; justify-content: center; gap: 16px; text-align: left;">
+        <img src="qrcode_pix_memorial_da_fe.png" style="width: 96px; height: 96px; border-radius: 6px; border: 1px solid #cbd5e1; flex-shrink: 0;" alt="QR Code PIX Memorial da Fé">
+        <div>
+            <strong>🤝 Apoie Esta Obra de Resgate dos Hinos Clássicos (Oferta Voluntária):</strong><br>
+            Se este livro e os louvores do nosso canal têm edificado a sua família, você pode semear voluntariamente qualquer valor apontando a câmera do seu celular para o QR Code ao lado ou usando a chave:<br>
+            <span style="font-size: 10.5pt; color: #1b365d; font-weight: bold;">🔑 Chave PIX (E-mail): contato@memorialdafe.com.br</span>
+            <span style="font-size: 8.5pt; color: #64748b;">(Titular MEI: Sandro da Silva Pinto)</span><br>
+            <em>"Cada um contribua segundo propôs no seu coração... porque Deus ama ao que dá com alegria." (2 Coríntios 9:7)</em>
+        </div>
+    </div>
+
+    <div class="footer-text">
+        MEMORIAL DA FÉ EDITORA © 2026 — TODOS OS DIREITOS RESERVADOS<br>
+        <a href="https://www.youtube.com/@ecosdaf" target="_blank" style="color: #1b365d; font-weight: bold;">youtube.com/@ecosdaf</a> • contato@memorialdafe.com.br
+    </div>
+</div>
+
+</body>
+</html>
