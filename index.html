@@ -149,7 +149,7 @@
                 <div class="bg-dark-950 border border-dark-700 hover:border-gold-500/60 rounded-2xl p-5 flex flex-col justify-between transition shadow-xl group">
                     <div>
                         <div class="relative rounded-xl overflow-hidden mb-4 bg-dark-800 aspect-video flex items-center justify-center border border-dark-700">
-                            <img src="capas/caminho_solitario.jpg" alt="Lindas Moradas" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-90">
+                            <img src="capas/lindas_moradas.jpg" alt="Lindas Moradas" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-90">
                             <span class="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-md uppercase tracking-wider shadow">#1 Mais Pedido</span>
                             <span class="absolute bottom-2 right-2 bg-dark-950/80 text-gold-400 text-[10px] font-bold px-2 py-0.5 rounded border border-gold-500/30">Harpa Cristã</span>
                         </div>
@@ -176,7 +176,7 @@
                     <span class="absolute -top-3 right-4 bg-gold-500 text-dark-950 text-[10px] font-black px-3 py-0.5 rounded-full uppercase tracking-wider shadow">Demonstrador</span>
                     <div>
                         <div class="relative rounded-xl overflow-hidden mb-4 bg-dark-800 aspect-video flex items-center justify-center border border-dark-700">
-                            <img src="capas/obrigado_meu_jesus.jpg" alt="Jesus Nazareno" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-90">
+                            <img src="capas/jesus_nazareno.jpg" alt="Jesus Nazareno" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-90">
                             <span class="absolute top-2 left-2 bg-gold-500/90 text-dark-950 text-[10px] font-bold px-2 py-0.5 rounded-md uppercase tracking-wider shadow">Dupla Clássica</span>
                         </div>
                         <h4 class="font-cinzel font-bold text-lg text-white group-hover:text-gold-400 transition">Jesus Nazareno</h4>
@@ -386,7 +386,7 @@
 
                 <div class="flex flex-col sm:flex-row items-center gap-5 border-b border-dark-700 pb-6 mb-6">
                     <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl bg-dark-800 border-2 border-gold-500/50 overflow-hidden flex-shrink-0 relative group shadow-lg">
-                        <img src="capas/obrigado_meu_jesus.jpg" alt="Capa Jesus Nazareno" class="w-full h-full object-cover opacity-90">
+                        <img src="capas/jesus_nazareno.jpg" alt="Capa Jesus Nazareno" class="w-full h-full object-cover opacity-90">
                         <div class="absolute inset-0 bg-dark-950/40 flex items-center justify-center">
                             <i class="fa-solid fa-cross text-gold-400 text-2xl"></i>
                         </div>
@@ -563,14 +563,26 @@
 
             <div class="bg-dark-900 border-2 border-gold-500/60 rounded-3xl p-6 sm:p-8 shadow-2xl relative">
                 
-                <div class="text-center mb-6">
-                    <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold block mb-1">Chave Pix Oficial (E-mail):</span>
-                    <div class="inline-flex items-center gap-3 bg-dark-950 px-5 py-3 rounded-2xl border border-gold-500/40 shadow-inner">
-                        <i class="fa-brands fa-pix text-emerald-400 text-xl"></i>
-                        <span id="pix-key-text" class="font-mono font-bold text-base sm:text-lg text-white select-all">contato@memorialdafe.com.br</span>
-                        <button type="button" onclick="copyPixKey()" class="bg-gold-500 hover:bg-gold-400 text-dark-950 px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1">
-                            <i class="fa-solid fa-copy"></i> <span id="copy-btn-label">Copiar</span>
-                        </button>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-8">
+                    <!-- QR Code Card -->
+                    <div class="bg-white p-3 rounded-2xl shadow-xl border-2 border-gold-500/60 flex-shrink-0 text-center">
+                        <img src="qrcode_pix_memorial_da_fe.png" alt="QR Code Pix Memorial da Fé" class="w-36 h-36 object-contain rounded-lg">
+                        <span class="text-[10px] uppercase font-bold text-gray-800 tracking-wider block mt-1"><i class="fa-solid fa-qrcode mr-1"></i> Aponte a Câmera</span>
+                    </div>
+
+                    <!-- Pix Key & Copy -->
+                    <div class="text-center sm:text-left">
+                        <span class="text-xs text-gray-400 uppercase tracking-wider font-semibold block mb-1">Ou copie a Chave Pix Oficial (E-mail):</span>
+                        <div class="inline-flex items-center gap-3 bg-dark-950 px-4 sm:px-5 py-3 rounded-2xl border border-gold-500/40 shadow-inner">
+                            <i class="fa-brands fa-pix text-emerald-400 text-xl"></i>
+                            <span id="pix-key-text" class="font-mono font-bold text-sm sm:text-base text-white select-all">contato@memorialdafe.com.br</span>
+                            <button type="button" onclick="copyPixKey()" class="bg-gold-500 hover:bg-gold-400 text-dark-950 px-3 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1">
+                                <i class="fa-solid fa-copy"></i> <span id="copy-btn-label">Copiar</span>
+                            </button>
+                        </div>
+                        <p class="text-[11px] text-gray-400 mt-2">
+                            <i class="fa-solid fa-shield-halved text-green-400 mr-1"></i> Liberação imediata após envio do comprovante
+                        </p>
                     </div>
                 </div>
 
